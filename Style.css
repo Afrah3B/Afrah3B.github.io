@@ -1,0 +1,573 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #F6FFF8;
+}
+
+/* Navigation Bar */
+
+.home {
+  background: linear-gradient(-90deg, #A4C3B2 60%, #F6FFF8 60%);
+  ;
+  padding-bottom: 30px;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-top: -1cm;
+  padding-top: 2cm;
+  height: 14.9cm;
+}
+
+.topmenu {
+  color: #74837c;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.topmenu:hover {
+  color: white;
+  /* Add the styles here */
+  font-weight: bolder;
+  text-decoration: underline;
+  transition: all 0.7s ease;
+
+}
+
+.topdiv {
+  /* float: right; */
+  display: block;
+  float: inline-end;
+  padding-right: 3cm;
+  padding-top: 150px;
+}
+
+/* Titles */
+
+.home h2 {
+  display: block;
+  text-align: center;
+  font-size: 75px;
+  color: #000000;
+  margin-top: 200px;
+  margin-bottom: -80px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.home h4 {
+  text-align: center;
+  font-size: 52px;
+  color: #000000;
+  margin-left: 80px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Used in the About Me sections */
+
+.container {
+  display: flex;
+  background-color: #F6FFF8;
+  margin-left: -1cm;
+  margin-right: -1cm;
+}
+
+/* About Me */
+
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 10px;
+  padding-left: 110px;
+  color: #4d194d;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#about-me p {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  font-size: 20px;
+  padding-left: 110px;
+  padding-right: 90px;
+  padding-bottom: 50px;
+  color: rgb(128, 128, 128);
+
+}
+
+
+/* Skills */
+
+.all_skills {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-top: 50px;
+  align-items: center;
+
+}
+
+.skills {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 13px;
+  background: linear-gradient(145deg, #A4C3B2, #F6FFF8);
+  box-shadow: 9px 9px 18px #868686,
+    -9px -9px 18px #ffffff;
+}
+
+#skills {
+  display: flex;
+  background-color: #F6FFF8;
+  margin-left: -1cm;
+  margin-right: -1cm;
+}
+
+.skills img {
+  height: 35px;
+  align-items: center;
+}
+
+.skills h6 {
+  align-items: center;
+  font-size: 20px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+}
+
+.skills p {
+  align-items: center;
+  font-size: 15px;
+  color: rgb(90, 87, 87);
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
+
+/* Projects */
+#projects {
+  display: flex;
+  background-color: #F6FFF8;
+  margin-left: -1cm;
+  margin-right: -1cm;
+}
+
+.projects-container {
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 60px;
+  margin-left: -30px;
+}
+
+.projects-container hr {
+  border: 1px solid #cce3de;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+
+.project-card h3 {
+  color: #4a4e69;
+  font-size: 25px;
+  margin-left: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.project-card li {
+  color:rgb(128, 128, 128);
+  font-size: 20px;
+  margin-left: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.more{
+  display: none;
+}
+
+/* know more Button */
+.cta {
+  position: relative;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin: auto;
+  padding: 12px 18px;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #A4C3B2;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position:relative;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: rgb(128, 128, 128);
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: rgb(128, 128, 128);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #A4C3B2;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+  stroke: white;
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+.cta:hover span{
+  font-weight: bolder;
+  color:white;
+  
+}
+
+
+/* Scroll to Top Button */
+
+.goup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #a4c3b2;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: #4d194d;
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+
+/* Form Pop-up */
+
+.popup {
+  padding-top: 60px;
+  width: 400px;
+  height: 200px;
+  background-color: #A4C3B2;
+  border-radius: 3mm;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: fixed;
+  visibility: hidden;
+  
+}
+
+.popup button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(128, 128, 128);
+  background-color: #f6fff873;
+  padding: 1em 2em;
+  margin: 1em 1em;
+  border: none;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.popup button span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #F6FFF8;
+  border-radius: 50%;
+  transition: .6s ease;
+}
+
+.popup button span:nth-child(6) {
+  position: relative;
+}
+
+.popup button span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+.popup button span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+.popup button span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
+}
+
+.popup button span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+.popup button span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+.popup button:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+
+/* contact */
+#contact{
+  background-color: #F6FFF8;
+  margin-left: -1cm;
+  margin-right: -1cm;
+}
+
+/* Recommendation Form */
+.input {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: bold;
+  color: rgb(70, 70, 70);
+  background-color: #ffffff;
+  box-shadow: 0 0 .4vw #a4c3b24f, 0 0 0 .15vw transparent;
+  border-radius: 0.6vw;
+  border: none;
+  outline: none;
+  padding: 0.4vw;
+  max-width: 290px;
+  transition: .4s;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  width: 50cm;
+}
+
+.textarea:hover, .input:hover {
+  box-shadow: 0 0 0 .15vw #a4c3b263;
+}
+
+.textarea:hover, .input:focus {
+  box-shadow: 0 0 0 .15vw #A4C3B2;
+}
+.textarea {
+  margin-top: 20px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: bold;
+  color: rgb(70, 70, 70);
+  background-color: #ffffff;
+  box-shadow: 0 0 .4vw #a4c3b24f, 0 0 0 .15vw transparent;
+  border-radius: 0.6vw;
+  border: none;
+  outline: none;
+  padding: 0.4vw;
+  max-width: 600px;
+  transition: .4s;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+fieldset {
+  display: flexbox;
+  align-content: center;
+  justify-content: center;
+  padding: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-width: 0;
+  width: 50%;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send_btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(128, 128, 128);
+  background-color: #a4c3b27c;
+  padding: 1em 2em;
+  border: none;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.send_btn span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #a4c3b2;
+  border-radius: 50%;
+  transition: .6s ease;
+}
+
+.send_btn span:nth-child(6) {
+  position: relative;
+}
+
+.send_btn span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+.send_btn span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+.send_btn span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
+}
+
+.send_btn span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+.send_btn span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+.send_btn:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+  
+/* Buttons */
+
+.buttonup {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+buttonup:hover {
+  background-color: #7600bc;
+  border: 1px solid #7600bc;
+  color: #fff;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*-- footer --*/
+footer{
+  background-color: #A4C3B2;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-bottom: -1cm;
+  padding: 40px;
+  text-align: center;
+  row-gap: 10px;
+  font-size: 12;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+}
+.footer_link{
+  text-align:center;
+  font-size: smaller;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+footer a:hover{
+  color: #4a4e69;
+  text-decoration: underline;
+}
