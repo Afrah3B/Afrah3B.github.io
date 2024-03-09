@@ -1,0 +1,9 @@
+dark color palatte
+#323436 => shadow #292626
+#dddada => shadow white
+#414F54 ==dark text
+#637074 ==lighter text => shadow #3A4245
+#292626b9 == simitransparent box
+
+light color palatte
+##a59517
