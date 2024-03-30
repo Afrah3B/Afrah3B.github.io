@@ -6,4 +6,15 @@ dark color palatte
 #292626b9 == simitransparent box
 
 light color palatte
-##a59517
+:root {
+    --background: #f3f3f3;
+    --text-color: #505050;
+    --first-color: #588484;
+    --second-color: #c5bf4b;
+    --third-color: #85586F;
+    --third-comp-green: #58846e;
+    --third-comp-green-trans: #58846e8c;
+    --third-comp-green-trans-more: #58846e33;
+    --third-comp-blue: #585884;
+    --third-comp-blue-trans: #585884b0;
+}

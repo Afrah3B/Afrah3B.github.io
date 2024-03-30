@@ -2,38 +2,84 @@
 <html>
 
 <head>
+
+    <!-- google fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Pacifico&family=Salsa&display=swap"
+        rel="stylesheet">
+    <!-- menu -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- swiper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta charset="utf-8">
     <title>Afrah Bawhab - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js" type="text/JavaScript"></script>
+    <link rel="stylesheet" type="text/css" href="mobilestyle.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 </head>
 
-<body>
-    <!-- first page -->
-    <nav>
-        <div class="home" id="home">
-            <div>
-                <h2>Afrah Bawhab</h2>
-                <h4>Software Developer</h4>
+<body id="home">
+    <!-- fron body -->
+    <nav class="betweenRow">
+        <!--top menue-->
+        <a href="index.html" class="centerRow topname" id="home">Afrah Bawhab</a>
+        <div>
+            <div class="navmenu" id="navmenu">
+                <div class="nav-list-container">
+                    <a href="#contact" class="centerRow topmenu">Contact</a>
+                    <a href="#certificates" class="centerRow topmenu">Certificates</a>
+                    <a href="#projects" class="centerRow topmenu">Projects</a>
+                    <a href="#skills" class="centerRow topmenu">Skills</a>
+                    <a href="#about-me" class="centerRow topmenu">About me</a>
+                    <div class="closenav" id="closenav">X</div>
+                </div>
             </div>
-            <div class="topdiv">
-                <a class="topmenu" href="front.html">front</a>
-                <a class="topmenu" href="#about-me">About Me</a>
-                <a class="topmenu" href="#skills">Skills</a>
-                <a class="topmenu" href="#projects">Projects</a>
-                <a class="topmenu" href="#contact">Contact</a>
 
+            <div class="opennav" id="opennav">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
             </div>
         </div>
     </nav>
+    <div class="tbPadding">
+        <div class="centerRow name">Afrah Bawhab</div>
+        <div class="betweenRow pref ">
+            <h3 class="positionName">Full Stack Software Developer</h3>
+            <p>Passionate computer science graduate. Enjoy programming and
+                creating creative websites.<a href="#about-me"> know more...</a>
+            </p>
+            <div class="icon centerCol">
+                <a href="mailto:Afrahbawhab@gmail.com" target="_blank">@</a>
+                <a href="https://www.linkedin.com/in/afrah-bawhab-0891a826a" target="_blank">in</a>
+                <a href="assets/pdf/AfrahCV.pdf" target="_blank">cv</a>
+            </div>
+        </div>
 
-    <!-- About Me -->
-    <section id="about-me" class="container">
-        <div>
-            <h1>Welcome to my website!</h1>
+    </div>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 11.2958 27 2.859">
+        <path
+            d="M 0 12 C 2 13 2 11 5 12 C 9 14 8 13 12 12 C 17 10 18 15 21 12 C 23 10 25 13 27 12 V 13 C 25 14 23 11 21 13 C 18 16 17 11 12 13 C 7 15 7 14 5 13 C 2 12 2 14 0 13"
+            fill="#ABC4AA" />
+    </svg>
+
+    <!-- about me -->
+    <div class="sectionStart centerCol" id="about-me">
+        <div class="centerCol about-me">
+            <h2>Welcome to my website!</h2>
             <p>
                 I'm a highly motivated computer science graduate from Um AlQura University, with
                 a specialization in software development.
-                <br><br>
                 I hold a Bachelor's degree from UQU, where I acquired a strong foundation in computer science principles
                 and practices. My educational journey has equipped me with a deep understanding of software development,
                 algorithms, data structures, and database management.
@@ -55,346 +101,515 @@
                 work I've done. If you believe I could be a valuable addition to your team, please don't hesitate to
                 reach out. I am thrilled to connect with like-minded professionals and embark on new adventures in the
                 world of backend development.
-                <br><br>
+            </p>
+            <p>
                 Thank you for visiting my website!
             </p>
         </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-        <h1>Skills</h1>
-        <div class="all_skills">
-            <div class="skills">
-                <img
-                    src="https://www.pinclipart.com/picdir/big/269-2691398_python-logo-clipart-transparent-background-png-download.png" />
-                <h6>Python</h6>
-                <p>2 years experience</p>
-            </div>
-            <div class="skills">
-                <img
-                    src="https://th.bing.com/th/id/R.26bedbe32de935baa2dff9a173f10865?rik=TMpSCk8tU%2bWzIw&pid=ImgRaw&r=0" />
-                <h6>Java</h6>
-                <p>4 years experience</p>
-            </div>
-            <div class="skills">
-                <img src="https://th.bing.com/th/id/OIP.5CwzDPNfXtNrtpjhZOkGLgHaIV?rs=1&pid=ImgDetMain"
-                    alt="no image" />
-                <h6>C++</h6>
-                <p>1 years experience</p>
-            </div>
-
-            <div class="skills">
-                <img src="https://image.pngaaa.com/393/23393-middle.png" alt="no image" />
-                <h6>Dart</h6>
-                <p>1 years experience</p>
-            </div>
-
-            <div class="skills">
-                <img src="https://th.bing.com/th/id/OIP.tHvkJ4jkN02ilALM0mZqhAHaHa?rs=1&pid=ImgDetMain" />
-                <h6>Flutter</h6>
-                <p>1 years experience</p>
-            </div>
-
-            <div class="skills">
-                <img src="https://th.bing.com/th/id/OIP.Mrb8EiYMlvcRFQY384KEHwHaKd?rs=1&pid=ImgDetMain"
-                    alt="no image" />
-                <h6>HTML</h6>
-                <p>3 years experience</p>
-            </div>
-
-            <div class="skills">
-                <img src="https://th.bing.com/th/id/OIP.YPYdVAg5ieRspLI6HIpmDQHaIB?rs=1&pid=ImgDetMain"
-                    alt="no image" />
-                <h6>JavaScript</h6>
-                <p>3 years experience</p>
-            </div>
-
-            <div class="skills">
-                <img
-                    src="data:image/jpeg;base64,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" />
-                <h6>CSS</h6>
-                <p>3 years experience</p>
-            </div>
-            <div class="skills">
-                <img src="https://th.bing.com/th/id/OIP.diayN09u1DKylpb1IWnSqwHaDL?rs=1&pid=ImgDetMain" />
-                <h6>Django
-                </h6>
-                <p>1 years experience</p>
-            </div>
-            <div class="skills">
-                <img
-                    src="https://th.bing.com/th/id/R.b592b1154d25c072c104d331939dd67c?rik=ik5PMt%2fEIg4fHA&pid=ImgRaw&r=0" />
-                <h6>Flask</h6>
-                <p>1 years experience</p>
-            </div>
-            <div class="skills">
-                <img src="https://th.bing.com/th/id/R.255b77e251b19a6d0600634d2ff9b006?rik=SzX%2bTv0btpluxQ&pid=ImgRaw&r=0"
-                    alt="no image" />
-                <h6>MySQL</h6>
-                <p>3 years experience</p>
-            </div>
-
-            <div class="skills">
-                <img src="https://logonoid.com/images/postgresql-logo.png" alt="no image" />
-                <h6>PostgreSQL</h6>
-                <p>1 years experience</p>
-            </div>
-
-            <div class="skills">
-                <img src="https://1000logos.net/wp-content/uploads/2020/08/Git-Logo.png" />
-                <h6>Git</h6>
-                <p>1 years experience</p>
-            </div>
-            <div class="skills">
-                <img src="https://th.bing.com/th/id/OIP.WXYkSlyA_VANPOh8OV17rwAAAA?rs=1&pid=ImgDetMain" />
-                <h6>React.js</h6>
-                <p>1 years experience</p>
-            </div>
-            <div class="skills">
-                <img
-                    src="https://th.bing.com/th/id/R.f7337d339216d05c1551688efb13a830?rik=m28qY9WE3BaKXQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fnodejs-png-nodejs-icon-png-50-px-1600.png&ehk=XR9ktXGvw5svYVTEqemL7wSEUZL%2bihqTpYBLPSQn8GQ%3d&risl=&pid=ImgRaw&r=0" />
-                <h6>node.js</h6>
-                <p>1 years experience</p>
-            </div>
-            <div class="skills">
-                <img
-                    src="https://th.bing.com/th/id/R.f56174382f698556d4d63de4d8c70e48?rik=7TNZh0Qu7rB3qg&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f09%2fDocker_logo.png&ehk=3bIEk6kEfOfkM%2fXL3vD30cFCffWkz%2fhymoTC2pq9GVU%3d&risl=&pid=ImgRaw&r=0" />
-                <h6>Docker</h6>
-                <p>1 years experience</p>
-            </div>
-            <div class="skills">
-                <img src="https://th.bing.com/th/id/OIP.wOMtZQ4cb_gxIZ1HkiKOfwHaDw?rs=1&pid=ImgDetMain" />
-                <h6>Kubernetes</h6>
-                <p>1 years experience</p>
-            </div>
-            <div class="skills">
-                <img
-                    src="https://th.bing.com/th/id/R.51738c27c2cc7521bbfb87cbb9668454?rik=WSMofJgMFJd11w&pid=ImgRaw&r=0" />
-                <h6>Agile Methodologies</h6>
-                <p>2 years experience</p>
-            </div>
-            <div class="skills">
-                <img src="https://th.bing.com/th/id/OIP.57xmDvsDg9OqOKzwgu97tQHaE7?rs=1&pid=ImgDetMain" />
-                <h6>Microsoft office</h6>
-                <p>5 years experience</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <!--
-        
-
-Graduation project / 2023
-python, ML / NLP / 2023
-java / Software Engineering || / 2022-2023
-Wix.com / User Interface Design / 2022-2023
-java / Advanced Programming / 2022
-html-CSS-javaScript / Internet Applications / 2022
-C++ / Computer Graphic / 2021-2022-->
-    <section id="projects">
-        <h1>Projects</h1>
-        <div id="projects-container" class="projects-container">
-            <div class="project-card">
-                <h3>Hima حمى</h3>
-                <ul>
-                    <li>A crowd management system using Artificial Intelligence (AI) detection model</li><br>
-                    <div id="hima" class="more">
-                        <li>system shows the best distribution for officers</li><br>
-                        <li>more info soon</li><br>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 11.2958 27 2.859">
+        <path
+            d="M 0 12 C 2 13 2 11 5 12 C 9 14 8 13 12 12 C 17 10 18 15 21 12 C 23 10 25 13 27 12 V 13 C 25 14 23 11 21 13 C 18 16 17 11 12 13 C 7 15 7 14 5 13 C 2 12 2 14 0 13"
+            fill="#585884" />
+    </svg>
+    <!-- skills -->
+    <div class="sectionStart" id="skills">
+        <div class="skills-container">
+            <h2>Technical skills</h2>
+            <div class="skillsBox swiper">
+                <div class="centerRow swiper-wrapper">
+                    <div class="skill swiper-slide">
+                        <img
+                            src="https://www.pinclipart.com/picdir/big/269-2691398_python-logo-clipart-transparent-background-png-download.png" />
+                        <h6>Python</h6>
                     </div>
-                    <button class="cta" onclick="knowMore('hima')"><span>Know more</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </ul>
-            </div>
-            <hr>
-            <div class="project-card">
-                <h3>AI sentences recognizer</h3>
-                <ul>
-                    <li>Apply Natural Language Processing (NLP) and Machine Learning (ML) to reconize Arabic sentences
-                    </li><br>
-                    <div id="NLPsentenceRecog" class="more">
-                        <li>recognize the arabic sentences as fast and accurate as possible</li><br>
-                        <li>more info soon</li><br>
+                    <div class="skill swiper-slide">
+                        <img
+                            src="https://th.bing.com/th/id/R.26bedbe32de935baa2dff9a173f10865?rik=TMpSCk8tU%2bWzIw&pid=ImgRaw&r=0" />
+                        <h6>Java</h6>
                     </div>
-                    <button class="cta" onclick="knowMore('NLPsentenceRecog')"><span>Know more</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </ul>
-            </div>
-            <hr>
-            <div class="project-card">
-                <h3>Alnorain النورين</h3>
-                <ul>
-                    <li>System to help pilgrims in the two holy mosques</li><br>
-                    <div id="Alnorain" class="more">
-                        <li>many serveces to help pilgrims to reach the closest stores and better bus times</li><br>
-                        <li>more info soon</li><br>
+                    <div class="skill swiper-slide">
+                        <img src="https://th.bing.com/th/id/OIP.5CwzDPNfXtNrtpjhZOkGLgHaIV?rs=1&pid=ImgDetMain"
+                            alt="no image" />
+                        <h6>C++</h6>
                     </div>
-                    <button class="cta" onclick="knowMore('Alnorain')"><span>Know more</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </ul>
-            </div>
-            <hr>
-            <div class="project-card">
-                <h3>Gameso</h3>
-                <ul>
-                    <li>Creating UI/UX for game shopping website</li><br>
-                    <div id="Gameso" class="more">
-                        <li>insted of dropping the game the parents can sell, exchange and donate them</li><br>
-                        <li>more info soon</li><br>
-                    </div>
-                    <button class="cta" onclick="knowMore('Gameso')"><span>Know more</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </ul>
-            </div>
-            <hr>
-            <div class="project-card">
-                <h3>Hotel management system</h3>
-                <ul>
-                    <li>using Advance programming to make front-end and back-end</li><br>
-                    <div id="Hotelmanage" class="more">
-                        <li>help hotels to keep tracking their reservation and manage them</li><br>
-                        <li>more info soon</li><br>
-                    </div>
-                    <button class="cta" onclick="knowMore('Hotelmanage')"><span>Know more</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </ul>
-            </div>
-            <hr>
-            <div class="project-card">
-                <h3>character recognizing AI project</h3>
-                <ul>
-                    <li>Developed a questions program that extract the character</li><br>
-                    <div id="AIcharacterRecog" class="more">
-                        <li>for one piece character</li><br>
-                        <li>more info soon</li><br>
-                    </div>
-                    <button class="cta" onclick="knowMore('AIcharacterRecog')"><span>Know more</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </ul>
-            </div>
-            <hr>
 
-            <div class="project-card">
-                <h3>Badan Website</h3>
-                <ul>
-                    <li>A website about sport and test to specify the most suitable sport</li><br>
-                    <div id="badan" class="more">
-                        <li>make more healthy life</li><br>
-                        <li>more info soon</li><br>
+                    <div class="skill swiper-slide">
+                        <img src="https://image.pngaaa.com/393/23393-middle.png" alt="no image" />
+                        <h6>Dart</h6>
                     </div>
-                    <button class="cta" onclick="knowMore('badan')"><span>Know more</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </ul>
-            </div>
-            <hr>
-            <div class="project-card">
-                <h3>Minecraft Graphic</h3>
-                <ul>
-                    <li>Graphic design for Minecraft game</li><br>
-                    <div id="minecraft" class="more">
-                        <li>showing graphics in 3D and motions</li><br>
-                        <li>more info soon</li><br>
+
+                    <div class="skill swiper-slide">
+                        <img src="https://th.bing.com/th/id/OIP.tHvkJ4jkN02ilALM0mZqhAHaHa?rs=1&pid=ImgDetMain" />
+                        <h6>Flutter</h6>
                     </div>
-                    <button class="cta" onclick="knowMore('minecraft')"><span>Know more</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </ul>
-            </div>
 
-        </div>
-    </section>
-    <div style="clear:both;"></div>
+                    <div class="skill swiper-slide">
+                        <img src="https://th.bing.com/th/id/OIP.Mrb8EiYMlvcRFQY384KEHwHaKd?rs=1&pid=ImgDetMain"
+                            alt="no image" />
+                        <h6>HTML</h6>
+                    </div>
 
-    <!-- contact Form -->
-    <section id="contact">
-        <h1>contact me</h1>
-        <div class="flex_center">
-            
-            <fieldset>
-                <input type="text" placeholder="Name (Optional)" class="input">
-                <input type="text" placeholder="Email" class="input"> <br />
-                <textarea id="new_message" cols="500" rows="10" placeholder="Message" class="textarea"></textarea><br><br>
-                <div class="flex_center">
-                    <button class="send_btn" onclick="send()">
-                        <span class="circle1"></span>
-                        <span class="circle2"></span>
-                        <span class="circle3"></span>
-                        <span class="circle4"></span>
-                        <span class="circle5"></span>
-                        <span class="text">Send</span>
-                    </button>
+                    <div class="skill swiper-slide">
+                        <img src="https://th.bing.com/th/id/OIP.YPYdVAg5ieRspLI6HIpmDQHaIB?rs=1&pid=ImgDetMain"
+                            alt="no image" />
+                        <h6>JavaScript</h6>
+                    </div>
+
+                    <div class="skill swiper-slide">
+                        <img
+                            src="data:image/jpeg;base64,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" />
+                        <h6>CSS</h6>
+                    </div>
+                    <div class="skill swiper-slide">
+                        <img src="https://th.bing.com/th/id/OIP.diayN09u1DKylpb1IWnSqwHaDL?rs=1&pid=ImgDetMain" />
+                        <h6>Django
+                        </h6>
+                    </div>
+                    <div class="skill swiper-slide">
+                        <img
+                            src="https://th.bing.com/th/id/R.b592b1154d25c072c104d331939dd67c?rik=ik5PMt%2fEIg4fHA&pid=ImgRaw&r=0" />
+                        <h6>Flask</h6>
+                    </div>
+                    <div class="skill swiper-slide">
+                        <img src="https://th.bing.com/th/id/R.255b77e251b19a6d0600634d2ff9b006?rik=SzX%2bTv0btpluxQ&pid=ImgRaw&r=0"
+                            alt="no image" />
+                        <h6>MySQL</h6>
+                    </div>
+
+                    <div class="skill swiper-slide">
+                        <img src="https://logonoid.com/images/postgresql-logo.png" alt="no image" />
+                        <h6>PostgreSQL</h6>
+                    </div>
+
+                    <div class="skill swiper-slide">
+                        <img src="https://1000logos.net/wp-content/uploads/2020/08/Git-Logo.png" />
+                        <h6>Git</h6>
+                    </div>
+                    <div class="skill swiper-slide">
+                        <img src="https://th.bing.com/th/id/OIP.WXYkSlyA_VANPOh8OV17rwAAAA?rs=1&pid=ImgDetMain" />
+                        <h6>React.js</h6>
+                    </div>
+                    <div class="skill swiper-slide">
+                        <img
+                            src="https://th.bing.com/th/id/R.f7337d339216d05c1551688efb13a830?rik=m28qY9WE3BaKXQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fnodejs-png-nodejs-icon-png-50-px-1600.png&ehk=XR9ktXGvw5svYVTEqemL7wSEUZL%2bihqTpYBLPSQn8GQ%3d&risl=&pid=ImgRaw&r=0" />
+                        <h6>node.js</h6>
+                    </div>
+                    <div class="skill swiper-slide">
+                        <img
+                            src="https://th.bing.com/th/id/R.f56174382f698556d4d63de4d8c70e48?rik=7TNZh0Qu7rB3qg&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f09%2fDocker_logo.png&ehk=3bIEk6kEfOfkM%2fXL3vD30cFCffWkz%2fhymoTC2pq9GVU%3d&risl=&pid=ImgRaw&r=0" />
+                        <h6>Docker</h6>
+                    </div>
+                    <div class="skill swiper-slide">
+                        <img src="https://th.bing.com/th/id/OIP.wOMtZQ4cb_gxIZ1HkiKOfwHaDw?rs=1&pid=ImgDetMain" />
+                        <h6>Kubernetes</h6>
+                    </div>
+                    <div class="skill swiper-slide">
+                        <img
+                            src="https://th.bing.com/th/id/R.51738c27c2cc7521bbfb87cbb9668454?rik=WSMofJgMFJd11w&pid=ImgRaw&r=0" />
+                        <h6>Agile Methodologies</h6>
+                    </div>
+                    <div class="skill swiper-slide">
+                        <img src="https://th.bing.com/th/id/OIP.57xmDvsDg9OqOKzwgu97tQHaE7?rs=1&pid=ImgDetMain" />
+                        <h6>Microsoft office</h6>
+                    </div>
+
                 </div>
-            </fieldset>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-    </section>
 
-    <div class="goup">
-        <a class="button" href="#home">
-            <svg class="svgIcon" viewBox="0 0 384 512">
-                <path
-                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
-                </path>
-            </svg>
-        </a>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 11.2958 27 2.859">
+        <path
+            d="M 0 12 C 2 13 2 11 5 12 C 9 14 8 13 12 12 C 17 10 18 15 21 12 C 23 10 25 13 27 12 V 13 C 25 14 23 11 21 13 C 18 16 17 11 12 13 C 7 15 7 14 5 13 C 2 12 2 14 0 13"
+            fill="#c5bf4b" />
+    </svg>
+
+    <!-- projects -->
+
+    <div class="sectionStart" id="projects">
+        <h2>Projects</h2>
+        <div id="projects-container" class="projects-container centerRow">
+            <div class="project-card centerCol" onclick="showMore('hima')" id="himaCard">
+                <img src="assets\projects\hima\Hima_logo.png" alt="">
+                <h3>Hima حمى</h3>
+            </div>
+            <div class="project-card centerCol" onclick="showMore('nlp')" id="nlpCard">
+                <img src="assets\projects\nlp\nlp.jpg" alt="">
+                <h3>AI sentences recognizer</h3>
+            </div>
+            <div class="project-card centerCol" onclick="showMore('Alnorain')" id="AlnorainCard">
+                <img src="assets\projects\alnorain\النورين.png" alt="">
+                <h3>Alnorain النورين</h3>
+            </div>
+            <div class="project-card centerCol" onclick="showMore('gameso')" id="gamesoCard">
+                <img src="assets\projects\gameso\gameso.png" alt="">
+                <h3>Gameso</h3>
+            </div>
+            <div class="project-card centerCol" onclick="showMore('hotel')" id="hotelCard">
+                <img src="assets\projects\hotel\hotel.png" alt="">
+                <h3>Hotel management system</h3>
+            </div>
+            <div class="project-card centerCol" onclick="showMore('charReco')" id="charRecoCard">
+                <img src="assets\projects\characterReco\onepiece.png" alt="">
+                <h3>AI character recognizing</h3>
+            </div>
+            <div class="project-card centerCol" onclick="showMore('badan')" id="badanCard">
+                <img src="assets\projects\badan\badan.png" alt="" class="imgbackground">
+                <h3>Badan Website</h3>
+            </div>
+            <div class="project-card centerCol" onclick="showMore('Minecraft')" id="MinecraftCard">
+                <img src="assets\projects\minecraft\minecraft.png" alt="">
+                <h3>Minecraft Graphic</h3>
+            </div>
+        </div>
+        <div class="project-detail-container" id="hima">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('hima')">
+                    <h3>X</h3>
+                </div>
+                <img src="assets\projects\hima\Hima_logo.png" alt="">
+                <div>
+                    <h3>Hima حمى</h3>
+                    <ul>
+                        <li>A crowd management system using Artificial Intelligence (AI) detection model</li>
+                        <li>Improve crowd management by continuously relocating officers based on crowd density</li>
+                        <li>Keep abreast of unexpected crowds to offer pilgrims a safe pilgrimeage</li>
+                        <li>Ensure officers are properly distributed among the areas in case any incidents arise
+                        </li>
+                        <li>Roboflow annotation tool for the dataset preparation</li>
+                        <li>Python, flutter and dart languages. and firebase API</li>
+                    </ul>
+                </div>
+                <div class="Pics">
+                    <img src="assets\projects\hima\hima1.jpg" alt="" class="Pics1" onclick="zoom(0)">
+                    <img src="assets\projects\hima\hima2.jpeg" alt="" onclick="zoom(1)">
+                    <img src="assets\projects\hima\hima3.jpeg" alt="" onclick="zoom(2)">
+                </div>
+            </div>
+            <div id="image-container0" class="image-container centerRow" onclick="zoomout(0)">
+                <img src="assets\projects\hima\hima1.jpg">
+            </div>
+            <div id="image-container1" class="image-container centerRow" onclick="zoomout(1)">
+                <img src="assets\projects\hima\hima2.jpeg">
+            </div>
+            <div id="image-container2" class="image-container centerRow" onclick="zoomout(2)">
+                <img src="assets\projects\hima\hima3.jpeg">
+            </div>
+        </div>
+        <div class="project-detail-container" id="nlp">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('nlp')">X</div>
+                <img src="assets\projects\nlp\nlp.jpg" alt="">
+                <div>
+                    <h3>AI sentences recognizer</h3>
+                    <ul>
+                        <li>Apply Natural Language Processing (NLP) and Machine Learning (ML) to reconize Arabic
+                            sentences
+                        </li>
+                        <li>recognize the arabic sentences as fast and accurate as possible</li>
+                        <li>89% Accuracy</li>
+                        <li>Python programming language</li>
+                    </ul>
+                </div>
+                <div class="Pic">
+                    <img src="assets\projects\nlp\nlpModeltest.jpg" alt="" class="Pics1" onclick="zoom(3)">
+                </div>
+            </div>
+            <div id="image-container3" class="image-container centerRow" onclick="zoomout(3)">
+                <img src="assets\projects\nlp\nlpModeltest.jpg">
+            </div>
+        </div>
+        <div class="project-detail-container" id="Alnorain">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('Alnorain')">X</div>
+                <img src="assets\projects\alnorain\النورين.png" alt="">
+                <div>
+                    <h3>Alnorain النورين</h3>
+                    <ul>
+                        <li>An application to help pilgrims in thier journey</li>
+                        <li>Provide information about holy places and offer advice regarding their visit schedules
+                        </li>
+                        <li>Offering a range of services, including hotels, markets, and bus timetables and
+                            schedules
+                        </li>
+                        <li>Java programming language</li>
+                    </ul>
+                </div>
+                <div class="Pics">
+                    <img src="assets\projects\alnorain\alnorain.jpg" alt="" class="Pics1" onclick="zoom(4)">
+                    <img src="assets\projects\alnorain\alnorain2.jpg" alt="" onclick="zoom(5)">
+                    <img src="assets\projects\alnorain\alnorain3.jpg" alt="" onclick="zoom(6)">
+                </div>
+            </div>
+            <div id="image-container4" class="image-container centerRow" onclick="zoomout(4)">
+                <img src="assets\projects\alnorain\alnorain.jpg">
+            </div>
+            <div id="image-container5" class="image-container centerRow" onclick="zoomout(5)">
+                <img src="assets\projects\alnorain\alnorain2.jpg">
+            </div>
+            <div id="image-container6" class="image-container centerRow" onclick="zoomout(6)">
+                <img src="assets\projects\alnorain\alnorain3.jpg">
+            </div>
+        </div>
+        <div class="project-detail-container" id="gameso">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('gameso')">X</div>
+                <img src="assets\projects\gameso\gameso.png" alt="">
+                <div>
+                    <h3>Gameso</h3>
+                    <ul>
+                        <li>Designing the user interface and user experience UI/UX for a game shopping website</li>
+                        <li>Assisting gamers in making cost-effective purchases and leveraging unused games to their
+                            advantage</li>
+                        <li>Applying fundamental design principles to enhance the UI/UX</li>
+                        <li>Prototype using Wix.com</li>
+                    </ul>
+                </div>
+                <div class="Pics">
+                    <img src="assets\projects\gameso\gameso.jpg" alt="" class="Pics1" onclick="zoom(7)">
+                    <img src="assets\projects\gameso\gameso2.jpg" alt="" onclick="zoom(8)">
+                    <img src="assets\projects\gameso\gameso3.jpg" alt="" onclick="zoom(9)">
+                </div>
+            </div>
+            <div id="image-container7" class="image-container centerRow" onclick="zoomout(7)">
+                <img src="assets\projects\gameso\gameso.jpg">
+            </div>
+            <div id="image-container8" class="image-container centerRow" onclick="zoomout(8)">
+                <img src="assets\projects\gameso\gameso2.jpg">
+            </div>
+            <div id="image-container9" class="image-container centerRow" onclick="zoomout(9)">
+                <img src="assets\projects\gameso\gameso3.jpg">
+            </div>
+
+        </div>
+        <div class="project-detail-container" id="hotel">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('hotel')">X</div>
+                <img src="assets\projects\hotel\hotel.png" alt="">
+                <div>
+                    <h3>Hotel management system</h3>
+                    <ul>
+                        <li>Hotel management system provides comprehensive assistance to hotels, aiding them in
+                            efficiently tracking their reservations and managing them with ease.</li>
+                        <li>Advance programming to make front-end and back-end</li>
+                        <li>Java programming language & MySQL database</li>
+                    </ul>
+                </div>
+                <div>
+                    <video controls muted poster="assets\projects\hotel\hotel.jpg" id="video">
+                        <source src="assets\projects\hotel\hotelSystem.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="project-detail-container" id="charReco">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('charReco')">X</div>
+                <img src="assets\projects\characterReco\onepiece.png" alt="">
+                <div>
+                    <h3>AI character recognizing</h3>
+                    <ul>
+                        <li>Designed and implemented a specialized questionnaire program aimed at identifying
+                            personality traits aligning with characters from the popular manga series "One Piece."
+                        </li>
+                        <li>Prolog programming language</li>
+                    </ul>
+                </div>
+                <div>
+                    <video controls muted poster="assets\projects\characterReco\charreco.jpg" id="video">
+                        <source src="assets\projects\characterReco\charReco.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="project-detail-container" id="badan">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('badan')">X</div>
+                <img src="assets\projects\badan\badan.png" alt="" class="imgbackground">
+                <div>
+                    <h3>Badan Website</h3>
+                    <ul>
+                        <li>An interactive sports-themed website designed to help users discover their ideal sport
+                            through tailored testing and analysis</li>
+                        <li>Sports reveal the power in our body(Bdan-بدن)</li>
+                        <li>HTML, CSS and JavaScript</li>
+                    </ul>
+                </div>
+                <div>
+                    <video controls muted poster="assets\projects\badan\badan.jpg" id="video">
+                        <source src="assets\projects\badan\badan.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="project-detail-container" id="Minecraft">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('Minecraft')">X</div>
+                <img src="assets\projects\minecraft\minecraft.png" alt="">
+                <div>
+                    <h3>Minecraft Graphic</h3>
+                    <ul>
+                        <li>
+                            Created dynamic graphic designs for Minecraft, showcasing stunning 3D graphics and
+                            captivating animations to enhance the visual experience of the game</li>
+                        <li>C++ programming language</li>
+                    </ul>
+                </div>
+                <div>
+                    <video controls id="video">
+                        <source src="assets\projects\minecraft\CGProject.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="popup" id="popup" class="flex_center">
-        <h3>thank you for your message<!-- Add appropriate text here--></h3>
-        <button class="send_btn" onclick="showPopup(false)">
-            <span class="circle1"></span>
-            <span class="circle2"></span>
-            <span class="circle3"></span>
-            <span class="circle4"></span>
-            <span class="circle5"></span>
-            <span class="text">done</span>
-        </button>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 11.2958 27 2.859">
+        <path
+            d="M 0 12 C 2 13 2 11 5 12 C 9 14 8 13 12 12 C 17 10 18 15 21 12 C 23 10 25 13 27 12 V 13 C 25 14 23 11 21 13 C 18 16 17 11 12 13 C 7 15 7 14 5 13 C 2 12 2 14 0 13"
+            fill="#85586F" />
+    </svg>
+
+    <!-- certificates -->
+    <div class="sectionStart" id="certificates">
+        <h2>Certificates</h2>
+        <di class="certificate-container centerRow">
+            <img src="assets\certificates\complete ML and DS.jpg" alt="" onclick="certificate('c1')" id="c1">
+            <img src="assets\certificates\dartandflutter.jpg" onclick="certificate('c2')" id="c2">
+            <img src="assets\certificates\IBM software developer courses.jpg" onclick="certificate('c3')" id="c3">
+            <img src="assets\certificates\capstonP.jpeg" onclick="certificate('c4')" id="c4">
+            <img src="assets\certificates\cloud.jpeg" onclick="certificate('c5')" id="c5">
+            <img src="assets\certificates\datascience.jpeg" onclick="certificate('c6')" id="c6">
+            <img src="assets\certificates\docker.jpeg" onclick="certificate('c7')" id="c7">
+            <img src="assets\certificates\fullstack assessment.jpeg" onclick="certificate('c8')" id="c8">
+            <img src="assets\certificates\gitGithub.jpeg" onclick="certificate('c9')" id="c9">
+            <img src="assets\certificates\microservices.jpeg" onclick="certificate('c10')" id="c10">
+            <img src="assets\certificates\nodejs.jpeg" onclick="certificate('c11')" id="c11">
+            <img src="assets\certificates\pythonAndFlask.jpeg" onclick="certificate('c12')" id="c12">
+            <img src="assets\certificates\react.jpeg" onclick="certificate('c13')" id="c13">
+            <img src="assets\certificates\sql.jpeg" onclick="certificate('c14')" id="c14">
+            <img src="assets\certificates\aws cloud practitioner.jpg" onclick="certificate('c15')" id="c15">
+            <img src="assets\certificates\backend.jpg" onclick="certificate('c16')" id="c16">
+            <img src="assets\certificates\web.jpeg" onclick="certificate('c17')" id="c17">
     </div>
-    
-    <footer>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 11.2958 27 2.859">
+        <path
+            d="M 0 12 C 2 13 2 11 5 12 C 9 14 8 13 12 12 C 17 10 18 15 21 12 C 23 10 25 13 27 12 V 13 C 25 14 23 11 21 13 C 18 16 17 11 12 13 C 7 15 7 14 5 13 C 2 12 2 14 0 13"
+            fill="#58846e" />
+    </svg>
+
+    <!-- contact -->
+    <div class="contact centerRow sectionStart" id="contact">
+        <div class="contact-me centerRow">
+            <div class="contact-form-container centerRow" id="contact-form-container">
+                <h2>Contact me</h2>
+                <div class="centerRow msg_error" id="msg_error">
+                    <svg fill="#f3f3f3" width="25px" height="25px" viewBox="0 0 20.40 20.40"
+                        xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"
+                        transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M16.406 10.283a7.917 7.917 0 1 1-7.917-7.917 7.916 7.916 0 0 1 7.917 7.917zM9.48 14.367a1.003 1.003 0 1 0-1.004 1.003 1.003 1.003 0 0 0 1.004-1.003zM7.697 11.53a.792.792 0 0 0 1.583 0V5.262a.792.792 0 0 0-1.583 0z">
+                            </path>
+                        </g>
+                    </svg>
+                    <p id="msg_error_text"></p>
+                </div>
+                <form action="" id="contact-form">
+                    <fieldset>
+                        <input type="text" placeholder="Name (Optional)" class="input" name="user_name">
+                        <input type="text" placeholder="Email" class="input" name="user_email" id="user_email">
+                        <textarea id="message" rows="5" placeholder="Message" name="user_message"></textarea>
+                        
+                            <button class="send_btn" onclick="send()">
+                                <span class="text">Send</span>
+                            </button>
+                        
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="contact-message" class="contact-message centerRow">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" fill="none" stroke="#85586F"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="0.784">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="m14.25 8.75c-.5 2.5-2.3849 4.85363-5.03069 5.37991-2.64578.5263-5.33066-.7044-6.65903-3.0523-1.32837-2.34784-1.00043-5.28307.81336-7.27989 1.81379-1.99683 4.87636-2.54771 7.37636-1.54771">
+                        </path>
+                        <polyline points="5.75 7.75,8.25 10.25,14.25 3.75"></polyline>
+                    </g>
+                </svg>
+                <br>
+                <h2>Thank you</h2>
+                <h3>Message sent successfully</h3>
+            </div>
+        </div>
+
+    </div>
+    <footer class="betweenRow">
         <a href="#home">Afrah Bawhab</a>
-        <div class="footer_link">
-            <a href="#home">linkedin</a>
+        <div class="footer-link betweenRow">
+            <a href="https://www.linkedin.com/in/afrah-bawhab-0891a826a" target="_blank">
+                <svg class="centerRow" fill="#f3f3f3" height="40px" width="40px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="-143 145 512 512" xml:space="preserve">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z ">
+                        </path>
+                    </g>
+                </svg>
+            </a>
             <br>
-            <a href="#home">email</a>
+            <a href="mailto:Afrahbawhab@gmail.com" target="_blank">
+                <svg  height="40px" width="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="centerRow">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
+                            stroke="#f3f3f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </a>
+            <br>
+            <a href="https://github.com/Afrah3B" target="_blank">
+                <svg  height="40px" width="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f3f3f3" class="centerRow">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>github</title>
+                        <rect width="24" height="24" fill="none"></rect>
+                        <path
+                            d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
         </div>
         <span class="footer_copy">
             &#169; All Rights Reserved
         </span>
     </footer>
+
+
 </body>
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="script.js" type="text/JavaScript"></script>
+<!-- emailjs script -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 
 </html>
