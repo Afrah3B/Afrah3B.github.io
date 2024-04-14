@@ -46,7 +46,8 @@ h1,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li {
     font-size: 15px;
     font-family: 'El Messiri', sans-serif;
     color: var(--text-color);
@@ -128,6 +129,9 @@ nav {
     background-color: var(--first-color);
     color: var(--background);
     border-radius: 10px;
+}
+.contactmenu:hover{
+    background-color: var(--third-color);
 }
 
 
@@ -232,6 +236,10 @@ nav {
     border-right: 7px solid var(--third-comp-green);
     border-left: 7px solid var(--third-comp-green);
     border-radius: 5px;
+}
+.skills{
+    display: flex;
+    align-items: center;
 }
 
 .skill {
@@ -374,12 +382,12 @@ video {
     flex-wrap: wrap;
     margin: 1% 7%;
     justify-content: space-around;
+    gap: 10px 50px;
 }
 
 .project-card {
     height: 150px;
     margin: 2%;
-    width: 150px;
     color: var(--third-color);
     text-align: center;
     cursor: pointer;
@@ -390,12 +398,17 @@ video {
 
 .project-card img {
     height: 100px;
-    width: auto;
+    width: 100px;
+    object-fit: cover;
     z-index: -1;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     border-radius: 20%;
     transition: .4s ease-in-out;
+}
+.project-card h3{
+    width: 100px;
+    height: 40px;
 }
 
 .imgbackground {
@@ -409,11 +422,12 @@ video {
 .project-card:hover img {
     filter: grayscale(0%);
     height: 105px;
+    width: 105px;
 }
 
 .project-card:hover h3 {
     color: var(--third-comp-green);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* certificates */
@@ -596,21 +610,27 @@ textarea:hover {
 footer {
     height: 100px;
     background-color: var(--third-color);
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     color: var(--background);
     padding: 0% 2%;
+    text-align: center;
 }
 
 .footer-link {
     width: 200px;
+    justify-content: center;
+    gap: 20px;
 }
 
-.footer_copy,
-footer a {
+.footer_copy{
     font-family: 'El Messiri', sans-serif;
     width: 180px;
+    color: var(--background);
+    font-size: 19px;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+footer a {
+    font-family: 'El Messiri', sans-serif;
     color: var(--background);
     font-size: 19px;
     text-decoration: none;
@@ -622,6 +642,6 @@ footer a {
 }
 
 .footer-link a:hover svg {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }

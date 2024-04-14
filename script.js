@@ -31,16 +31,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const swiper = new Swiper('.skillsBox', {
     // Optional parameters
     loop: true,
+    initialSlide: 0,
+    speed: 400,
 
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
     },
     // Default parameters
     slidesPerView: 6,
@@ -73,19 +69,19 @@ video.playbackRate = 2.0;
 function showMore(project) {
     var x = document.getElementById(project);
     var y = document.getElementById(project + "Card");
-    let arr = ['hima', 'nlp', 'Alnorain', 'gameso', 'hotel', 'charReco', 'badan', 'Minecraft'];
+    let arr = ['Athar','hima', 'nlp', 'Alnorain', 'gameso', 'hotel', 'charReco', 'badan', 'Minecraft'];
     arr = arr.filter(e => e !== project);
     for (let i = 0; i < arr.length; i++) {
         var z = document.getElementById(arr[i]);
         var l = document.getElementById(arr[i] + "Card");
         z.style.display = "none";
-        l.style.display = "block";
+        l.style.display = "flex";
     }
-    if (x.style.display === "block") {
+    if (x.style.display === "flex") {
         x.style.display = "none";
-        y.style.display = "block";
+        y.style.display = "flex";
     } else {
-        x.style.display = "block";
+        x.style.display = "flex";
         y.style.display = "none";
     }
 }
@@ -93,7 +89,7 @@ function closeP(project) {
     var x = document.getElementById(project);
     var y = document.getElementById(project + 'Card');
     x.style.display = "none";
-    y.style.display = "block";
+    y.style.display = "flex";
 }
 
 /* email js */

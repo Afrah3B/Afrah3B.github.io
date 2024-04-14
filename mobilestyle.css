@@ -49,10 +49,11 @@
         flex-direction: column;
     }
 
-    /* .about-me,
-    .contact-me {
-        width: 400px;
-    } */
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
 
     .icon {
         flex-direction: row;
@@ -69,6 +70,32 @@
     textarea,
     .input {
         width: 50vw;
+    }
+
+    .about-me {
+        background-color: transparent;
+    }
+    
+    .contact-me{
+        margin-top: 10%;
+    }
+
+    .project-detail {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .closeproject {
+        height: auto;
+        width: 90%;
+    }
+
+    .tbPadding {
+        padding: 25% 3%;
+    }
+
+    .name {
+        padding: 10% 0%;
     }
 
 }

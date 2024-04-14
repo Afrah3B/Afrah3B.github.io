@@ -34,7 +34,7 @@
         <div>
             <div class="navmenu" id="navmenu">
                 <div class="nav-list-container">
-                    <a href="#contact" class="centerRow topmenu">Contact</a>
+                    <a href="#contact" class="centerRow topmenu contactmenu">Contact</a>
                     <a href="#certificates" class="centerRow topmenu">Certificates</a>
                     <a href="#projects" class="centerRow topmenu">Projects</a>
                     <a href="#skills" class="centerRow topmenu">Skills</a>
@@ -60,7 +60,7 @@
             <div class="icon centerCol">
                 <a href="mailto:Afrahbawhab@gmail.com" target="_blank">@</a>
                 <a href="https://www.linkedin.com/in/afrah-bawhab-0891a826a" target="_blank">in</a>
-                <a href="assets/pdf/AfrahCV.pdf" target="_blank">cv</a>
+                <a href="assets\pdf\CV_AfrahBawhab_EN_2024.pdf" target="_blank">cv</a>
             </div>
         </div>
 
@@ -117,7 +117,7 @@
         <div class="skills-container">
             <h2>Technical skills</h2>
             <div class="skillsBox swiper">
-                <div class="centerRow swiper-wrapper">
+                <div class="skills swiper-wrapper">
                     <div class="skill swiper-slide">
                         <img
                             src="https://www.pinclipart.com/picdir/big/269-2691398_python-logo-clipart-transparent-background-png-download.png" />
@@ -231,6 +231,10 @@
     <div class="sectionStart" id="projects">
         <h2>Projects</h2>
         <div id="projects-container" class="projects-container centerRow">
+            <div class="project-card centerCol" onclick="showMore('Athar')" id="AtharCard">
+                <img src="assets\projects\Athar\pic.jpg" alt="">
+                <h3>أثر من القرآن Athar</h3>
+            </div>
             <div class="project-card centerCol" onclick="showMore('hima')" id="himaCard">
                 <img src="assets\projects\hima\Hima_logo.png" alt="">
                 <h3>Hima حمى</h3>
@@ -249,7 +253,7 @@
             </div>
             <div class="project-card centerCol" onclick="showMore('hotel')" id="hotelCard">
                 <img src="assets\projects\hotel\hotel.png" alt="">
-                <h3>Hotel management system</h3>
+                <h3>Hotel system</h3>
             </div>
             <div class="project-card centerCol" onclick="showMore('charReco')" id="charRecoCard">
                 <img src="assets\projects\characterReco\onepiece.png" alt="">
@@ -264,6 +268,38 @@
                 <h3>Minecraft Graphic</h3>
             </div>
         </div>
+        <div class="project-detail-container" id="Athar">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('Athar')">
+                    <h3>X</h3>
+                </div>
+                <img src="assets\projects\Athar\pic.jpg" alt="">
+                <div>
+                    <h3>Athar أثر من القرآن</h3>
+                    <ul>
+                        <li>A website for sharing Quraan verses and their impact</li>
+                        <li>To share the same feeling that the Holy Qur’an inspires, motivates, and influences our lives in indescribable ways.</li>
+                        <li>HTML, CSS, JavaScript, and Firebase API</li>
+                        <li>share your impact <a href="" target="_blank" style="text-decoration: underline;">here</a></li>
+                    </ul>
+                </div>
+                <div class="Pics">
+                    <img src="assets\projects\Athar\allAthar.jpg" alt="" class="Pics1" onclick="zoom(10)">
+                    <img src="assets\projects\Athar\addAthar.jpg" alt="" onclick="zoom(11)">
+                    <img src="assets\projects\Athar\Atharfront.jpg" alt="" onclick="zoom(12)">
+                </div>
+            </div>
+            <div id="image-container10" class="image-container centerRow" onclick="zoomout(10)">
+                <img src="assets\projects\Athar\allAthar.jpg">
+            </div>
+            <div id="image-container11" class="image-container centerRow" onclick="zoomout(11)">
+                <img src="assets\projects\Athar\addAthar.jpg">
+            </div>
+            <div id="image-container12" class="image-container centerRow" onclick="zoomout(12)">
+                <img src="assets\projects\Athar\Atharfront.jpg">
+            </div>
+        </div>
+        <!---->
         <div class="project-detail-container" id="hima">
             <div class="project-detail betweenRow">
                 <div class="closeproject" id="closeproject" onclick="closeP('hima')">
@@ -558,7 +594,7 @@
         <a href="#home">Afrah Bawhab</a>
         <div class="footer-link betweenRow">
             <a href="https://www.linkedin.com/in/afrah-bawhab-0891a826a" target="_blank">
-                <svg class="centerRow" fill="#f3f3f3" height="40px" width="40px" version="1.1" id="Layer_1"
+                <svg class="centerRow" fill="#f3f3f3" height="30px" width="30px" version="1.1" id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="-143 145 512 512" xml:space="preserve">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -572,7 +608,7 @@
             </a>
             <br>
             <a href="mailto:Afrahbawhab@gmail.com" target="_blank">
-                <svg  height="40px" width="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="centerRow">
+                <svg  height="30px" width="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="centerRow">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
@@ -584,7 +620,7 @@
             </a>
             <br>
             <a href="https://github.com/Afrah3B" target="_blank">
-                <svg  height="40px" width="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f3f3f3" class="centerRow">
+                <svg  height="30px" width="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f3f3f3" class="centerRow">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
