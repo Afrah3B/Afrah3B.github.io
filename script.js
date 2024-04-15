@@ -1,7 +1,10 @@
 /*-- show menu --*/
 let navMenu = document.getElementById("navmenu"),
     openNav = document.getElementById("opennav"),
-    closeNav = document.getElementById('closenav');
+    closeNav = document.getElementById('closenav'),
+    toDarkmode = document.getElementById("toDmode"),
+    toLightmode = document.getElementById("toLmode");
+const root_theme=document.querySelector(":root");
 
 console.log('opennav clicked');
 if (openNav) {
@@ -13,6 +16,32 @@ if (openNav) {
 if (closeNav) {
     closeNav.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
+    })
+}
+if (toDarkmode) {
+    toDarkmode.addEventListener('click', () => {
+        toDarkmode.style.display='none';
+        toLightmode.style.display='block';
+        root_theme.style.setProperty("--background","#101415");
+        root_theme.style.setProperty("--text-color-dark","#505050");
+        root_theme.style.setProperty("--text-color-light","#f3f3f3");
+        root_theme.style.setProperty("--third-comp-green-trans-more","#f3f3f310");
+        root_theme.style.setProperty("--img-background","#50505000");
+        root_theme.style.setProperty("--nav-background","#101415e3");
+        root_theme.style.setProperty("--vav-shadow","#101415");
+    })
+}
+if (toLightmode) {
+    toLightmode.addEventListener('click', () => {
+        toDarkmode.style.display='block';
+        toLightmode.style.display='none';
+        root_theme.style.setProperty("--background","#f3f3f3");
+        root_theme.style.setProperty("--text-color-dark","#f3f3f3");
+        root_theme.style.setProperty("--text-color-light","#505050");
+        root_theme.style.setProperty("--third-comp-green-trans-more","#58846e33");
+        root_theme.style.setProperty("--img-background","#505050");
+        root_theme.style.setProperty("--nav-background","#f3f3f3e3");
+        root_theme.style.setProperty("--vav-shadow","#f3f3f3");
     })
 }
 

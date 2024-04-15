@@ -1,7 +1,10 @@
 /*set the color variables*/
 :root {
     --background: #f3f3f3;
-    --text-color: #505050;
+    --text-color-light: #505050;
+    --text-color-dark: #f3f3f3;
+    --fixed-color-text-white: #f3f3f3;
+    --fixed-color-text-grey:#505050;
     --first-color: #588484;
     --second-color: #c5bf4b;
     --third-color: #85586F;
@@ -10,6 +13,7 @@
     --third-comp-green-trans-more: #58846e33;
     --third-comp-blue: #585884;
     --third-comp-blue-trans: #585884b0;
+    --img-background:#505050;
 }
 
 body {
@@ -50,13 +54,13 @@ h6,
 li {
     font-size: 15px;
     font-family: 'El Messiri', sans-serif;
-    color: var(--text-color);
+    color: var(--text-color-light);
     margin: 0%;
 }
 
 h2 {
     font-family: 'El Messiri', sans-serif;
-    color: var(--third-color);
+    color: var(--text-color-light);
 }
 
 a {
@@ -101,6 +105,43 @@ nav {
     cursor: pointer;
     color: var(--first-color);
     visibility: hidden;
+    margin: 7px;
+    transition: .4s ease-in-out;
+}
+
+.closenav:hover,
+.opennav:hover {
+    color: var(--third-color);
+}
+
+.toLmode {
+    cursor: pointer;
+    display: none;
+}
+
+.toDmode {
+    cursor: pointer;
+}
+
+.toDmode svg circle,
+.toDmode svg path {
+    transition: .4s ease-in-out;
+}
+
+.toDmode:hover svg circle,
+.toDmode:hover svg path {
+    fill: var(--text-color-light);
+}
+
+.toLmode svg circle,
+.toLmode svg path {
+    transition: .4s ease-in-out;
+}
+
+.toLmode:hover svg circle,
+.toLmode:hover svg path {
+    stroke: var(--text-color-light);
+
 }
 
 .topname,
@@ -109,10 +150,6 @@ nav {
     height: 40px;
     transition: .4s ease-in-out;
     cursor: pointer;
-}
-
-.nav-list-container {
-    padding-top: 1.8rem;
 }
 
 .topname {
@@ -130,7 +167,8 @@ nav {
     color: var(--background);
     border-radius: 10px;
 }
-.contactmenu:hover{
+
+.contactmenu:hover {
     background-color: var(--third-color);
 }
 
@@ -175,14 +213,14 @@ nav {
 }
 
 .positionName {
-    color: var(--text-color);
-    font-size: clamp(15px,4vw,30px);
+    color: var(--text-color-light);
+    font-size: clamp(15px, 4vw, 30px);
     font-family: 'El Messiri', sans-serif;
 }
 
 .pref p {
     width: 400px;
-    color: var(--text-color);
+    color: var(--text-color-light);
     text-align: justify;
     font-size: 19px;
     font-family: 'El Messiri', sans-serif;
@@ -219,7 +257,7 @@ nav {
     padding: 20px;
     height: fit-content;
     width: 70vw;
-    color: var(--text-color);
+    color: var(--text-color-light);
 }
 
 /*skills*/
@@ -237,7 +275,8 @@ nav {
     border-left: 7px solid var(--third-comp-green);
     border-radius: 5px;
 }
-.skills{
+
+.skills {
     display: flex;
     align-items: center;
 }
@@ -314,8 +353,17 @@ nav {
     height: 30vh;
     display: flex;
     align-items: baseline;
+    color: var(--text-color-light);
 }
-
+.clickhere{
+    text-decoration: underline;
+    font-size: 15px;
+    transition: .4s ease-in-out;
+}
+.clickhere:hover{
+    font-size: 17px;
+    color: var(--third-color);
+}
 /*square of pics*/
 .Pics {
     display: grid;
@@ -388,7 +436,6 @@ video {
 .project-card {
     height: 150px;
     margin: 2%;
-    color: var(--third-color);
     text-align: center;
     cursor: pointer;
     transition: .4s ease-in-out;
@@ -406,13 +453,14 @@ video {
     border-radius: 20%;
     transition: .4s ease-in-out;
 }
-.project-card h3{
+
+.project-card h3 {
     width: 100px;
     height: 40px;
 }
 
 .imgbackground {
-    background-color: var(--text-color);
+    background-color: var(--img-background);
 }
 
 .imgbackground:hover {
@@ -477,7 +525,7 @@ video {
     width: 250px;
     height: 25px;
     text-align: center;
-    color: var(--background);
+    color: var(--text-color-light);
     display: none;
     margin: 1%;
 }
@@ -503,8 +551,10 @@ textarea {
     border-bottom: 2px solid var(--third-comp-green);
     transition: .2s ease-in-out;
     width: 20vw;
+    color: var(--fixed-color-text-grey);
 }
-textarea{
+
+textarea {
     width: 50vw;
 }
 
@@ -513,7 +563,7 @@ textarea:focus {
     border: 2px solid var(--third-comp-green);
     border-radius: 5px;
     outline: none;
-    color: var(--text-color);
+    color: var(--text-color-light);
     animation-name: borderMove;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -554,7 +604,7 @@ textarea:hover {
     transition: .3s ease-in-out;
     width: 20%;
     height: 15%;
-    color: var(--background);
+    color: var(--fixed-color-text-white);
     font-weight: bold;
     font-size: 15px;
     font-family: 'El Messiri', sans-serif;
@@ -613,6 +663,7 @@ footer {
     color: var(--background);
     padding: 0% 2%;
     text-align: center;
+    margin: -8px;
 }
 
 .footer-link {
@@ -621,17 +672,18 @@ footer {
     gap: 20px;
 }
 
-.footer_copy{
+.footer_copy {
     font-family: 'El Messiri', sans-serif;
     width: 180px;
-    color: var(--background);
+    color: var(--fixed-color-text-white);
     font-size: 19px;
     text-decoration: none;
     transition: .4s ease-in-out;
 }
+
 footer a {
     font-family: 'El Messiri', sans-serif;
-    color: var(--background);
+    color: var(--fixed-color-text-white);
     font-size: 19px;
     text-decoration: none;
     transition: .4s ease-in-out;

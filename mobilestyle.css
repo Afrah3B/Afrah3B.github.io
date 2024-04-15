@@ -1,12 +1,16 @@
 /*navigation for mobile*/
+:root {
+    --nav-background:#f3f3f3e3;
+    --vav-shadow:#f3f3f3;
+}
 @media screen and (max-width:850px) {
     .navmenu {
         position: fixed;
         top: -1000%;
         left: 0;
-        background-color: #f3f3f3e3;
+        background-color: var(--nav-background);
         width: 100%;
-        box-shadow: 0 12px 24px #f3f3f3;
+        box-shadow: 0 12px 24px var(--vav-shadow);
         backdrop-filter: blur(7.8px);
         -webkit-backdrop-filter: blur(7.8px);
         padding-block: 1rem 1rem;
@@ -91,7 +95,7 @@
     }
 
     .tbPadding {
-        padding: 25% 3%;
+        padding: 30% 3%;
     }
 
     .name {

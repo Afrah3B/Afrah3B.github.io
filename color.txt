@@ -12,3 +12,4 @@ light color palatte
     --third-comp-blue-trans: #585884b0;
 }
 dark color pallatte
+background = 101415
