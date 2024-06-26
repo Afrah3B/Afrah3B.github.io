@@ -4,7 +4,7 @@ let navMenu = document.getElementById("navmenu"),
     closeNav = document.getElementById('closenav'),
     toDarkmode = document.getElementById("toDmode"),
     toLightmode = document.getElementById("toLmode");
-const root_theme=document.querySelector(":root");
+const root_theme = document.querySelector(":root");
 
 console.log('opennav clicked');
 if (openNav) {
@@ -20,28 +20,28 @@ if (closeNav) {
 }
 if (toDarkmode) {
     toDarkmode.addEventListener('click', () => {
-        toDarkmode.style.display='none';
-        toLightmode.style.display='block';
-        root_theme.style.setProperty("--background","#101415");
-        root_theme.style.setProperty("--text-color-dark","#505050");
-        root_theme.style.setProperty("--text-color-light","#f3f3f3");
-        root_theme.style.setProperty("--third-comp-green-trans-more","#f3f3f310");
-        root_theme.style.setProperty("--img-background","#50505000");
-        root_theme.style.setProperty("--nav-background","#101415e3");
-        root_theme.style.setProperty("--vav-shadow","#101415");
+        toDarkmode.style.display = 'none';
+        toLightmode.style.display = 'block';
+        root_theme.style.setProperty("--background", "#101415");
+        root_theme.style.setProperty("--text-color-dark", "#505050");
+        root_theme.style.setProperty("--text-color-light", "#f3f3f3");
+        root_theme.style.setProperty("--third-comp-green-trans-more", "#f3f3f310");
+        root_theme.style.setProperty("--img-background", "#50505000");
+        root_theme.style.setProperty("--nav-background", "#101415e3");
+        root_theme.style.setProperty("--vav-shadow", "#101415");
     })
 }
 if (toLightmode) {
     toLightmode.addEventListener('click', () => {
-        toDarkmode.style.display='block';
-        toLightmode.style.display='none';
-        root_theme.style.setProperty("--background","#f3f3f3");
-        root_theme.style.setProperty("--text-color-dark","#f3f3f3");
-        root_theme.style.setProperty("--text-color-light","#505050");
-        root_theme.style.setProperty("--third-comp-green-trans-more","#58846e33");
-        root_theme.style.setProperty("--img-background","#505050");
-        root_theme.style.setProperty("--nav-background","#f3f3f3e3");
-        root_theme.style.setProperty("--vav-shadow","#f3f3f3");
+        toDarkmode.style.display = 'block';
+        toLightmode.style.display = 'none';
+        root_theme.style.setProperty("--background", "#f3f3f3");
+        root_theme.style.setProperty("--text-color-dark", "#f3f3f3");
+        root_theme.style.setProperty("--text-color-light", "#505050");
+        root_theme.style.setProperty("--third-comp-green-trans-more", "#58846e33");
+        root_theme.style.setProperty("--img-background", "#505050");
+        root_theme.style.setProperty("--nav-background", "#f3f3f3e3");
+        root_theme.style.setProperty("--vav-shadow", "#f3f3f3");
     })
 }
 
@@ -66,6 +66,10 @@ const swiper = new Swiper('.skillsBox', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     // Default parameters
     slidesPerView: 6,
@@ -98,7 +102,7 @@ video.playbackRate = 2.0;
 function showMore(project) {
     var x = document.getElementById(project);
     var y = document.getElementById(project + "Card");
-    let arr = ['Athar','hima', 'nlp', 'Alnorain', 'gameso', 'hotel', 'charReco', 'badan', 'Minecraft'];
+    let arr = ['Athar', 'hima', 'nlp', 'Alnorain', 'gameso', 'hotel', 'charReco', 'badan', 'Minecraft'];
     arr = arr.filter(e => e !== project);
     for (let i = 0; i < arr.length; i++) {
         var z = document.getElementById(arr[i]);
@@ -197,29 +201,47 @@ function zoomout(num) {
     }
 }
 
-function certificate(id){
+function certificate(id) {
     let certificate = document.getElementById(id);
-    
-    if(certificate.classList.contains('certificate-container-clicked')){
+
+    if (certificate.classList.contains('certificate-container-clicked')) {
         certificate.classList.remove('certificate-container-clicked')
         return;
     }
-    let arr = ['c1','c2','c3','c4','c5','c6','c7','c8','c9','10','c11','c12','c13','c14','c15','c16','c17'];
+    let arr = ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9', '10', 'c11', 'c12', 'c13', 'c14', 'c15', 'c16', 'c17'];
     arr = arr.filter(e => e !== id);
     for (let i = 0; i < arr.length; i++) {
-        
+
         var z = document.getElementById(arr[i]);
-        if(z){
-            if(z.classList.contains('certificate-container-clicked')){
-            z.classList.remove('certificate-container-clicked')
+        if (z) {
+            if (z.classList.contains('certificate-container-clicked')) {
+                z.classList.remove('certificate-container-clicked')
+            }
         }
-        }
-        
-        
+
+
     }
     console.log(' clicked');
-    if(certificate){
+    if (certificate) {
         certificate.classList.add('certificate-container-clicked')
     }
 }
 
+function experDetails() {
+    let experlist = document.getElementById("experlist");
+    let experimg = document.getElementById("experimg");
+    let btndetails = document.getElementById("btn-exp-details");
+    let expercontainer = document.getElementById("exper-container");
+    if (experlist.classList.contains('exper-details')) {
+        experlist.classList.remove('exper-details');
+        experimg.classList.remove('exper-details');
+        expercontainer.style.backgroundColor="#58588433";
+        btndetails.innerHTML="hide";
+        return;
+    }
+    experlist.classList.add('exper-details');
+    experimg.classList.add('exper-details');
+    expercontainer.style.backgroundColor="#50505000";
+    btndetails.innerHTML="show details";
+    
+}
