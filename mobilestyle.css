@@ -1,8 +1,17 @@
 /*navigation for mobile*/
 :root {
-    --nav-background:#f3f3f3e3;
-    --vav-shadow:#f3f3f3;
+    --nav-background: #f3f3f3e3;
+    --vav-shadow: #f3f3f3;
 }
+
+@media screen and (max-width:700px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
 @media screen and (max-width:850px) {
     .pref {
         position: relative;
@@ -35,8 +44,8 @@
     .about-me {
         background-color: transparent;
     }
-    
-    .contact-me{
+
+    .contact-me {
         margin-top: 10%;
     }
 
@@ -58,7 +67,18 @@
         padding: 10% 0%;
     }
 
+    .exper-container{
+        flex-direction: column;
+    }
+    .experimg{
+        flex-direction: row;
+    }
+    .exper-container img {
+        height: 100px;
+        width: 100px;
+    }
 }
+
 @media screen and (max-width:1030px) {
     .navmenu {
         position: fixed;

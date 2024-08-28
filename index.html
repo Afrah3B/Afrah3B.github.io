@@ -11,12 +11,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Pacifico&family=Salsa&display=swap"
         rel="stylesheet">
+
     <!-- menu -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <!-- swiper link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <meta charset="utf-8">
+
     <title>Afrah Bawhab - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="mobilestyle.css" />
@@ -109,7 +112,7 @@
             <div class="icon centerCol">
                 <a href="mailto:Afrahbawhab@gmail.com" target="_blank">@</a>
                 <a href="https://www.linkedin.com/in/afrah-bawhab-0891a826a" target="_blank">in</a>
-                <a href="assets/pdf/CV_AfrahBawhab.pdf" target="_blank">cv</a>
+                <a href="assets/pdf/CV_AfrahBawhab_Aug2024.pdf" target="_blank">cv</a>
             </div>
         </div>
 
@@ -128,7 +131,7 @@
             <h2>Welcome to my website!</h2>
             <p>
                 I'm a highly motivated computer science graduate from Um AlQura University, with
-                a specialization in software development.
+                a specialization in web development.
                 I hold a Bachelor's degree from UQU, where I acquired a strong foundation in computer science principles
                 and practices. My educational journey has equipped me with a deep understanding of software development,
                 algorithms, data structures, and database management.
@@ -173,14 +176,14 @@
                 <div class="exper-details" id="experlist">
                     <li>Deal with Nusuk contracts</li>
                     <li>Contract statistics</li>
-                    <li>Active Dashboard</li>
+                    <li>Interactive Dashboard using Excel</li>
                     <li>Utilizing Google Earth for integrating paths</li>
                     <li>Preparing a survey to classify logistical operations at service centers for Hajj pilgrimage,
                         intended for submission to the Ministry of Hajj</li>
                 </div>
                 <button id="btn-exp-details" class="btn-show-details" onclick="experDetails()">show details</button>
             </div>
-            <div class="exper-details centerCol" id="experimg">
+            <div class="exper-details centerCol experimg" id="experimg">
                 <img src="assets\experience\rawafMina.jpeg" alt="rawaf img">
                 <img src="assets\experience\rawafmina1.jpeg" alt="rawaf img">
             </div>
@@ -313,6 +316,14 @@
     <div class="sectionStart" id="projects">
         <h2>Projects</h2>
         <div id="projects-container" class="projects-container centerRow">
+            <div class="project-card centerCol" onclick="showMore('dashboard')" id="dashboardCard">
+                <img src="assets\projects\dashboard\dashboard (3).png" alt="">
+                <h3>Interactive Dashboard</h3>
+            </div>
+            <div class="project-card centerCol" onclick="showMore('ecommerce')" id="ecommerceCard">
+                <img src="assets\projects\e-commerce\cart.svg" alt="">
+                <h3>E-Commerce</h3>
+            </div>
             <div class="project-card centerCol" onclick="showMore('Athar')" id="AtharCard">
                 <img src="assets\projects\Athar\pic.jpg" alt="">
                 <h3>أثر من القرآن Athar</h3>
@@ -350,6 +361,77 @@
                 <h3>Minecraft Graphic</h3>
             </div>
         </div>
+        <div class="project-detail-container" id="dashboard">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('dashboard')">
+                    <h3>X</h3>
+                </div>
+                <img src="assets\projects\dashboard\dashboard (3).png" alt="">
+                <div>
+                    <h3>Interactive Data Visualization Dashboard</h3>
+                    <ul>
+                        <li>Created a dynamic data visualization dashboard to provide real-time insights and analytics.</li>
+                        <li>Implemented interactive charts with real-time updates, user-driven data filters, and customizable views.</li>
+                        <li>React for the user interface, Chart.js for visualizations, and Firebase for data storage and real-time updates.</li>
+                    </ul>
+                </div>
+                <div class="Pics"><!---->
+                    <img src="assets\projects\dashboard\dashboard (1).png" alt="" class="Pics1" onclick="zoom(16)">
+                    <img src="assets\projects\dashboard\dashboard (2).png" alt="" onclick="zoom(17)">
+                    <img src="assets\projects\dashboard\dashboard (4).png" alt="" onclick="zoom(18)">
+                </div>
+            </div><!---->
+            <div id="image-container16" class="image-container centerRow" onclick="zoomout(16)">
+                <img src="assets\projects\dashboard\dashboard (1).png">
+            </div>
+            <div id="image-container17" class="image-container centerRow" onclick="zoomout(17)">
+                <img src="assets\projects\dashboard\dashboard (2).png">
+            </div>
+            <div id="image-container18" class="image-container centerRow" onclick="zoomout(18)">
+                <img src="assets\projects\dashboard\dashboard (4).png">
+            </div>
+        </div>
+        <!---->
+        <div class="project-detail-container" id="ecommerce">
+            <div class="project-detail betweenRow">
+                <div class="closeproject" id="closeproject" onclick="closeP('ecommerce')">
+                    <h3>X</h3>
+                </div>
+                <img src="assets\projects\e-commerce\cart.svg" alt="">
+                <div>
+                    <h3>E-Commerce</h3>
+                    <ul>
+                        <li>Developed a comprehensive E-Commerce platform.</li>
+                        <li>Implemented the Customer front-end, Admin front-end and back-end</li>
+                        <li>React for the front-end and Node.js with Express for the back-end.</li>
+                        <li>Integrated MongoDB for robust data storage and management.</li>
+                    </ul>
+                </div>
+                <div class="Pics"><!---->
+                    <img src="assets\projects\e-commerce\e-commerce-pic (1).png" alt="" onclick="zoom(13)">
+                    <img src="assets\projects\e-commerce\e-commerce-pic (2).png" alt="" onclick="zoom(14)">
+                    <img src="assets\projects\e-commerce\e-commerce-pic (3).png" alt="" onclick="zoom(15)">
+                    <img src="assets\projects\e-commerce\e-commerce-pic (4).png" alt="" onclick="zoom(14)">
+                    <img src="assets\projects\e-commerce\e-commerce-pic (5).png" alt="" onclick="zoom(15)">
+                </div>
+            </div><!---->
+            <div id="image-container13" class="image-container centerRow" onclick="zoomout(13)">
+                <img src="assets\projects\e-commerce\e-commerce-pic (1).png">
+            </div>
+            <div id="image-container14" class="image-container centerRow" onclick="zoomout(14)">
+                <img src="assets\projects\e-commerce\e-commerce-pic (2).png">
+            </div>
+            <div id="image-container15" class="image-container centerRow" onclick="zoomout(15)">
+                <img src="assets\projects\e-commerce\e-commerce-pic (3).png">
+            </div>
+            <div id="image-container16" class="image-container centerRow" onclick="zoomout(16)">
+                <img src="assets\projects\e-commerce\e-commerce-pic (4).png">
+            </div>
+            <div id="image-container17" class="image-container centerRow" onclick="zoomout(17)">
+                <img src="assets\projects\e-commerce\e-commerce-pic (5).png">
+            </div>
+        </div>
+        <!---->
         <div class="project-detail-container" id="Athar">
             <div class="project-detail betweenRow">
                 <div class="closeproject" id="closeproject" onclick="closeP('Athar')">

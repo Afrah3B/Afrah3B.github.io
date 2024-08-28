@@ -22,13 +22,13 @@ if (toDarkmode) {
     toDarkmode.addEventListener('click', () => {
         toDarkmode.style.display = 'none';
         toLightmode.style.display = 'block';
-        root_theme.style.setProperty("--background", "#101415");
+        root_theme.style.setProperty("--background", "#212121");
         root_theme.style.setProperty("--text-color-dark", "#505050");
         root_theme.style.setProperty("--text-color-light", "#f3f3f3");
         root_theme.style.setProperty("--third-comp-green-trans-more", "#f3f3f310");
         root_theme.style.setProperty("--img-background", "#50505000");
-        root_theme.style.setProperty("--nav-background", "#101415e3");
-        root_theme.style.setProperty("--vav-shadow", "#101415");
+        root_theme.style.setProperty("--nav-background", "#212121e3");
+        root_theme.style.setProperty("--vav-shadow", "#212121");
     })
 }
 if (toLightmode) {
@@ -102,7 +102,7 @@ video.playbackRate = 2.0;
 function showMore(project) {
     var x = document.getElementById(project);
     var y = document.getElementById(project + "Card");
-    let arr = ['Athar', 'hima', 'nlp', 'Alnorain', 'gameso', 'hotel', 'charReco', 'badan', 'Minecraft'];
+    let arr = ['dashboard','ecommerce','Athar', 'hima', 'nlp', 'Alnorain', 'gameso', 'hotel', 'charReco', 'badan', 'Minecraft'];
     arr = arr.filter(e => e !== project);
     for (let i = 0; i < arr.length; i++) {
         var z = document.getElementById(arr[i]);
@@ -113,9 +113,11 @@ function showMore(project) {
     if (x.style.display === "flex") {
         x.style.display = "none";
         y.style.display = "flex";
+        
     } else {
         x.style.display = "flex";
         y.style.display = "none";
+        x.scrollIntoView({behavior: 'smooth' });
     }
 }
 function closeP(project) {
