@@ -1,6 +1,29 @@
 const projects = [
     {
         id: 0,
+        name: "Rooting",
+        longName: "Full Stack E-commerce Website Rooting",
+        Logo: "assets/projects/rooting/logoText2.png",
+        description: [
+            "Developed and deployed a full E-commerce website integrate front-end, back-end and admin",
+            "Implemented payment and delivery integrations, secure authentication with bcrypt, and optimized image handling with Multer, AWS S3, and Imgix CDN for enhanced performance.",
+            "Designed a mobile-responsive UI with integrated sales analytics using Chart.js.",
+            "Ensured code quality and maintainability with SonarScanner analysis.",
+            "React.js, Node.js, Express, MongoDB, Deployed the backend using Docker, AWS, and CI/CD pipelines.",
+            `Explor <a href="https://rooting-sa.com/" target="_blank" class="clickhere">Rooting</a>`
+        ],
+        skills: ["react", 'chartjs', "nodejs", "express", "MongoDB", "docker", "aws"],
+        images: [
+            "assets/projects/rooting/shop (1).png",
+            "assets/projects/rooting/shop (2).png",
+            "assets/projects/rooting/shop (3).png",
+            "assets/projects/rooting/productlist.png",
+            "assets/projects/rooting/shop (4).png",
+            "assets/projects/rooting/shop (5).png",
+        ]
+    },
+    {
+        id: 1,
         name: "Interactive Dashboard",
         longName: "Interactive Data Visualization Dashboard",
         Logo: "assets/projects/dashboard/dashboard (3).png",
@@ -9,7 +32,7 @@ const projects = [
             "Implemented interactive charts with real-time updates, user-driven data filters, and customizable views.",
             "React for the user interface, Chart.js for visualizations, and Firebase for data storage and real-time updates.",
         ],
-        skills: ["react",'chartjs', "Firebase"],
+        skills: ["react", 'chartjs', "Firebase"],
         images: [
             "assets/projects/dashboard/dashboard (1).png",
             "assets/projects/dashboard/dashboard (2).png",
@@ -17,7 +40,7 @@ const projects = [
         ]
     },
     {
-        id: 1,
+        id: 2,
         name: "E-commerce",
         longName: "Full Stack E-commerce Website",
         Logo: "assets/projects/e-commerce/cart.svg",
@@ -37,7 +60,7 @@ const projects = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         name: "Athar",
         longName: "أثر من القرآن Athar",
         Logo: "assets/projects/Athar/pic.jpg",
@@ -55,7 +78,7 @@ const projects = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         name: "Hima",
         longName: "Hima حمى",
         Logo: "assets/projects/hima/Hima_logo.png",
@@ -67,7 +90,7 @@ const projects = [
             "Roboflow annotation tool for the dataset preparation",
             "Python, flutter and dart languages. and firebase API",
         ],
-        skills: ["flutter", "dart","roboflow", "Python",  "firebase"],
+        skills: ["flutter", "dart", "roboflow", "Python", "firebase"],
         images: [
             "assets/projects/hima/hima1.jpg",
             "assets/projects/hima/hima2.jpeg",
@@ -75,7 +98,7 @@ const projects = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         name: "Sentences Recognizer",
         longName: "AI Sentences Recognizer",
         Logo: "assets/projects/nlp/nlp.jpg",
@@ -91,7 +114,7 @@ const projects = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         name: "Alnorain",
         longName: "Alnorain النورين",
         Logo: "assets/projects/alnorain/alnorainlogo.png",
@@ -109,7 +132,7 @@ const projects = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         name: "Gameso",
         longName: "UI/UX Gameso",
         Logo: "assets/projects/gameso/gameso.png",
@@ -127,7 +150,7 @@ const projects = [
         ]
     },
     {
-        id: 7,
+        id: 8,
         name: "Hotel System",
         longName: "Hotel Management System",
         Logo: "assets/projects/hotel/hotel.png",
@@ -141,7 +164,7 @@ const projects = [
         video: "assets/projects/hotel/hotelSystem.mp4"
     },
     {
-        id: 8,
+        id: 9,
         name: "Character Recognizer",
         longName: "AI Character Recognizer",
         Logo: "assets/projects/characterReco/onepiece.png",
@@ -154,7 +177,7 @@ const projects = [
         video: "assets/projects/characterReco/charReco.mp4"
     },
     {
-        id: 9,
+        id: 10,
         name: "Badan",
         longName: "Badan Sport Website",
         Logo: "assets/projects/badan/badan.png",
@@ -168,7 +191,7 @@ const projects = [
         video: "assets/projects/badan/badan.mp4"
     },
     {
-        id: 10,
+        id: 11,
         name: "Graphics",
         longName: "Minecraft Graphic",
         Logo: "assets/projects/minecraft/minecraft.png",
@@ -199,7 +222,7 @@ const skills =
         {
             "name": "react",
             "url": "assets/skills/react-js.svg",
-        },{
+        }, {
             "name": "chartjs",
             "url": "assets/svg/chart-js.svg",
         },
@@ -210,7 +233,7 @@ const skills =
         {
             "name": "python",
             "url": "assets/skills/python.svg",
-        },{
+        }, {
             "name": "roboflow",
             "url": "assets/svg/roboflow.svg",
         },
@@ -241,7 +264,7 @@ const skills =
         }, {
             "name": "nodejs",
             "url": "assets/skills/node-js.svg",
-        },{
+        }, {
             "name": "express",
             "url": "assets/svg/express.svg",
         }, {
@@ -264,6 +287,14 @@ const skills =
             "name": "wix",
             "url": "assets/svg/wix.svg",
         },
+        {
+            "name": "docker",
+            "url": "assets/skills/docker.svg",
+        },
+        {
+            "name": "aws",
+            "url": "assets/skills/aws.svg",
+        },
     ];
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -272,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to create project card HTML
     function createProjectCard(project) {
         let invertedLogo = "";
-        if (project.id === 9) {
+        if (project.id === 10) {
             invertedLogo = "inverted-logo";
         }
         return `
@@ -296,10 +327,10 @@ let projectDetails = document.getElementById("projectDetailsContainer");
 function showMore(projectId) {
     projectDetails.style.display = 'flex';
     const rect = projectDetails.getBoundingClientRect();
-    const targetY = rect.top+document.documentElement.scrollTop-50;
+    const targetY = rect.top + document.documentElement.scrollTop - 50;
     window.scrollTo({
         top: targetY,
-        behavior: 'smooth' 
+        behavior: 'smooth'
     });
     const project = projects[projectId];
     const descriptionItems = project.description.map(desc => `<li>${desc}</li>`).join('');
@@ -308,9 +339,9 @@ function showMore(projectId) {
     const projectSkills = new Set(project.skills.map(skill => skill.toLowerCase()));
     const projectSkillsfiltered = skills.filter(skill => projectSkills.has(skill.name.toLowerCase()));
     const skillsitems = projectSkillsfiltered.map(skl => `<img src="${skl.url}" alt="${skl.name}" />`).join('');
-    if (projectId > 6) {
+    if (projectId > 7) {
 
-        if (project.id === 9) {
+        if (project.id === 10) {
             invertedLogo = "project-logo-inverted project-logo";
         }
         projectDetails.innerHTML =
@@ -333,7 +364,7 @@ function showMore(projectId) {
     }
     else {
         const imagesItems = project.images.map((img, index) =>
-            `<img src="${img}" alt="${project.name}" class="${index === 0 && projectId !== '1' ? 'project-imgs-first' : ''}" onclick="zoomIn('${img}')">`
+            `<img src="${img}" alt="${project.name}" class="${index === 0 && projectId !== '2' ? 'project-imgs-first' : 'project-imgs-img'}" onclick="zoomIn('${img}')">`
         ).join('');
         projectDetails.innerHTML =
             `<div class="close-project-container">

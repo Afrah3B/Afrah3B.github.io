@@ -664,12 +664,15 @@ video {
 
 .project-imgs img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 5%;
 }
+.project-imgs-img{
+    height: 80px;
+}
 
 .project-imgs-first {
+    height: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
