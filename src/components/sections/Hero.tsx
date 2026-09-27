@@ -1,5 +1,5 @@
-import { Mascot } from "page-mascot";
 import { profile } from "../../content/portfolio";
+import { MascotJourney } from "../MascotJourney";
 import { DecorativeGlyphs } from "../primitives";
 
 export function Hero() {
@@ -19,17 +19,11 @@ export function Hero() {
             Explore my work <span aria-hidden="true">↓</span>
           </a>
         </div>
-        <div className="hero-mascot-stage">
+        <div className="hero-mascot-stage" data-mascot-hero-anchor>
           <DecorativeGlyphs tone="rose" />
           <span className="mascot-orbit mascot-orbit-outer" aria-hidden="true" />
           <span className="mascot-orbit mascot-orbit-inner" aria-hidden="true" />
-          <Mascot
-            directions="/mascots/afrah-directions.webp"
-            reactions="/mascots/afrah-reactions.webp"
-            size={300}
-            label="Afrah's interactive portrait"
-            className="hero-mascot"
-          />
+          <MascotJourney />
         </div>
       </div>
     </section>

@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { requestHashScroll } from "./ScrollManager";
 import { applyTheme, getStoredTheme } from "../utils/theme";
 import type { ThemePreference } from "../utils/theme";
 
 const navItems = [
-  { label: "WORK", href: "/#work" },
-  { label: "ABOUT", href: "/#about" },
-  { label: "TOOLKIT", href: "/#toolkit" },
-  { label: "CONTACT", href: "/#contact" },
+  { label: "WORK", href: "/#work", hash: "#work" },
+  { label: "ABOUT", href: "/#about", hash: "#about" },
+  { label: "TOOLKIT", href: "/#toolkit", hash: "#toolkit" },
+  { label: "CONTACT", href: "/#contact", hash: "#contact" },
 ];
 
 export function Navbar() {
@@ -22,6 +23,12 @@ export function Navbar() {
   useEffect(() => {
     setOpen(false);
   }, [location]);
+
+  function handleSectionClick(hash: string) {
+    if (location.pathname === "/" && location.hash === hash) {
+      requestHashScroll(hash);
+    }
+  }
 
   return (
     <header className="site-header">
@@ -40,9 +47,13 @@ export function Navbar() {
         </button>
         <div className="nav-links" id="mobile-menu" data-open={open}>
           {navItems.map((item) => (
-            <a key={item.href} href={item.href}>
+            <Link
+              key={item.href}
+              to={item.href}
+              onClick={() => handleSectionClick(item.hash)}
+            >
               {item.label}
-            </a>
+            </Link>
           ))}
           <button
             className="theme-toggle"

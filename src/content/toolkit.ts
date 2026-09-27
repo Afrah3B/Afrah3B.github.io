@@ -60,7 +60,7 @@ export const toolkit = {
     description: "Technologies and systems I've used to build, ship, and operate real products.",
     groups: [
       { category: "Languages", items: [{ name: "JavaScript", iconKey: "javascript" }, { name: "TypeScript", iconKey: "typescript" }] },
-      { category: "Frontend", items: [{ name: "React.js", iconKey: "react" }, { name: "Next.js", iconKey: "nextjs" }, { name: "HTML", iconKey: "html" }, { name: "CSS", iconKey: "css" }] },
+      { category: "Frontend", items: [{ name: "React", iconKey: "react" }, { name: "Next.js", iconKey: "nextjs" }, { name: "HTML", iconKey: "html" }, { name: "CSS", iconKey: "css" }] },
       { category: "Backend & APIs", items: [{ name: "Node.js", iconKey: "nodejs" }, { name: "Express", iconKey: "express" }, { name: "RESTful APIs", iconKey: "rest-api" }] },
       { category: "Data & Backend Platforms", items: [{ name: "PostgreSQL", iconKey: "postgresql" }, { name: "MongoDB", iconKey: "mongodb" }, { name: "Redis", iconKey: "redis" }, { name: "Supabase", iconKey: "supabase" }, { name: "Firebase", iconKey: "firebase" }] },
       { category: "Cloud & Deployment", items: [{ name: "AWS", iconKey: "aws" }, { name: "DigitalOcean", iconKey: "digitalocean" }, { name: "Vercel", iconKey: "vercel" }, { name: "Render", iconKey: "render" }] },

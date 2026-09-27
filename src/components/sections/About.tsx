@@ -28,7 +28,7 @@ export function About() {
             and design deliberately matters just as much.
           </p>
         </div>
-        <div className="photo-slot" aria-label="Future professional photo area">
+        <div className="photo-slot" data-mascot-about-anchor aria-label="Mascot showcase area">
           <span aria-hidden="true" />
         </div>
       </div>

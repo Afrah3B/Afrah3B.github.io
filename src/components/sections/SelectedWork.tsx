@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import { selectedProjects } from "../../content/portfolio";
+import { compareProjectDateRanges, formatProjectYearRange } from "../../utils/projectDates";
 import { DecorativeGlyphs, Section } from "../primitives";
 
 export function SelectedWork() {
+  const projects = [...selectedProjects].sort(compareProjectDateRanges);
+
   return (
     <Section id="work" title="Selected Work" className="selected-work">
       <div className="project-stack">
-        {selectedProjects.map((project, index) => (
+        {projects.map((project, index) => (
           <article
             className="project-feature"
             data-flip={index % 2 === 1}
@@ -25,9 +28,10 @@ export function SelectedWork() {
             </div>
             <div className="project-copy">
               <p className="project-kicker">
-                PROJECT {project.index} <span /> {project.title.toUpperCase()}
+                {project.index} <span /> {project.title.toUpperCase()}
               </p>
               <h3>{project.headline}</h3>
+              <p className="project-timeline">{formatProjectYearRange(project.dateFrom, project.dateTo)}</p>
               {project.description.split("\n\n").map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}

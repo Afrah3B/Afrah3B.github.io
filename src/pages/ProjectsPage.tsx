@@ -5,6 +5,7 @@ import {
   archiveChapters,
   archiveIntro,
   archiveMeta,
+  formatArchiveProjectDate,
   getProjectsByChapter,
 } from "../content/archiveProjects";
 import { usePageMeta } from "../utils/usePageMeta";
@@ -55,7 +56,7 @@ export function ProjectsPage() {
                       <div className="archive-card-copy">
                         <div className="archive-card-meta">
                           <span>{project.category}</span>
-                          {project.year && <span>{project.year}</span>}
+                          {project.date && <span>{formatArchiveProjectDate(project.date)}</span>}
                         </div>
                         <h3>
                           <Link to={`/projects/${project.slug}`}>{project.title}</Link>

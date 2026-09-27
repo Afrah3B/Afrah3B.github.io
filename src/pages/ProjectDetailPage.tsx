@@ -1,8 +1,9 @@
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ArchiveMedia } from "../components/ArchiveMedia";
 import { Layout } from "../components/Layout";
 import { archiveChapters, getArchiveProject } from "../content/archiveProjects";
 import { usePageMeta } from "../utils/usePageMeta";
+import { NotFoundPage } from "./NotFoundPage";
 
 export function ProjectDetailPage() {
   const { slug = "" } = useParams();
@@ -14,7 +15,7 @@ export function ProjectDetailPage() {
   });
 
   if (!project) {
-    return <Navigate to="/projects" replace />;
+    return <NotFoundPage />;
   }
 
   const chapter = archiveChapters.find((item) => item.id === project.chapter);
@@ -43,7 +44,7 @@ export function ProjectDetailPage() {
           </article>
 
           <article>
-            <p className="section-label">What I explored / learned</p>
+            <p className="section-label">What I explored and learned</p>
             <p>{project.learning}</p>
           </article>
 
@@ -67,7 +68,7 @@ export function ProjectDetailPage() {
 
           {project.media.length > 1 && (
             <article className="archive-gallery-block">
-              <p className="section-label">Gallery / media</p>
+              <p className="section-label">Gallery and media</p>
               <div className="archive-gallery">
                 {project.media.slice(1).map((media) => (
                   <ArchiveMedia media={media} title={project.title} key={media.src} compact />
@@ -76,16 +77,16 @@ export function ProjectDetailPage() {
             </article>
           )}
 
-          {(project.liveUrl || project.repoUrl) && (
+          {(project.liveUrl || project.githubLink) && (
             <nav className="archive-actions" aria-label={`${project.title} links`}>
               {project.liveUrl && (
                 <a className="primary-link" href={project.liveUrl} target="_blank" rel="noreferrer">
                   Live project <span aria-hidden="true">↗</span>
                 </a>
               )}
-              {project.repoUrl && (
-                <a className="primary-link" href={project.repoUrl} target="_blank" rel="noreferrer">
-                  Repository <span aria-hidden="true">↗</span>
+              {project.githubLink && (
+                <a className="primary-link" href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                  GitHub repository <span aria-hidden="true">↗</span>
                 </a>
               )}
             </nav>
