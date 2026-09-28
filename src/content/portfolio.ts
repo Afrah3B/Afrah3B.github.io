@@ -81,8 +81,11 @@ export const selectedProjects = [
       month: "05",
       year: "2025",
     },
-    dateTo: "present",
-    tags: ["Business Systems", "Data", "Automation", "Integrations"],
+    dateTo: {
+      month:"08",
+      year:"2025"
+    },
+    tags: ["Business Systems", "Data Engineering", "Automation"],
     cta: "Explore LUD",
     image: "/assets/projects/lud/LUD_Landing.png",
     imageAlt: "LUD business operations platform landing page.",
@@ -102,7 +105,7 @@ export const selectedProjects = [
       month: "05",
       year: "2025",
     },
-    tags: ["E-commerce", "Full Stack", "Payments", "Cloud"],
+    tags: ["Full Stack", "Payments", "Cloud", "Integration"],
     cta: "Explore Rooting",
     image: "/assets/projects/rooting/Rooting_Landing.png",
     imageAlt: "Rooting e-commerce landing page.",
@@ -174,8 +177,8 @@ export const caseStudies = {
       month: "01",
       year: "2025",
     },
-    logo: "/assets/projects/banan/banan_logo.png",
     dateTo: "present",
+    logo: "/assets/projects/banan/banan_logo.png",
     tags: ["Adaptive Learning", "AI", "Architecture", "Infrastructure"],
     images: [
       {
@@ -209,31 +212,30 @@ export const caseStudies = {
     positioning:
       "A learning platform that began with touch typing and evolved through real-world school use.",
     overview:
-      "Banan began with touch typing. Afrah learned the skill at university and later taught it to other students. A year after she graduated, Banan's founder contacted her after seeing touch typing listed on her portfolio. They began using technology and AI to help students learn more effectively, and the product later expanded into a broader learning platform.",
+      "Banan began with touch typing. I learned the skill at university, later taught it to other students, and was contacted by Banan's founder after he saw it on my portfolio. What started as a focused way to help students learn more effectively with technology and AI became a real school-facing learning platform, and my responsibility grew with it.",
     challenge:
-      "The first version was built quickly to get something usable in front of real students. As the product grew, early architectural decisions became harder to extend safely.",
+      "The first version was intentionally built quickly so we could learn from real students instead of guessing in isolation. That speed was useful early on, but as usage and product complexity increased, some early architectural choices became harder to extend safely.",
     decisions: [
-      "Strengthened the system incrementally through architecture, testing, caching, documentation, containerization, CI/CD, and deployment improvements.",
-      "Changed the adaptive-learning approach from moving students backward to preserving normal progress and generating targeted practice.",
-      "Treated freshness and correctness as part of performance work rather than separate concerns.",
+      "Shifted the engineering work from proving the idea to making the product safer to change, using better structure, tests, documentation, deployment practices, and infrastructure improvements where they reduced real risk.",
+      "Changed the adaptive-learning approach so weakness generated targeted practice instead of moving students backward and erasing legitimate progress.",
+      "Treated freshness and correctness as part of performance work, especially when caching data that teachers and students rely on.",
     ],
     stories: [
       {
         title: "Weakness should not erase progress",
-        body: "After adaptive learning and generated practice were introduced, generated and standard lessons followed different paths. An incorrect condition prevented some standard lesson completions from persisting, so students could finish a lesson, reload, and find that their progress had moved backward. Beyond fixing the condition, the product lesson was clear: weaknesses should trigger focused practice, not remove earned progress.",
+        body: "After adaptive learning and generated practice were introduced, generated and standard lessons followed different paths. An incorrect condition prevented some standard lesson completions from persisting, so students could finish a lesson, reload, and find that their progress had moved backward. The fix was technical, but the larger product principle mattered more: weakness should trigger focused practice, not erase earned progress.",
       },
       {
         title: "Performance without correctness is not an optimization",
-        body: "Caching improved performance, but static caching was introduced where the data required stronger freshness guarantees. The system became faster while risking stale information, reframing the question as: how stale is this data allowed to become?",
+        body: "Caching improved response time, but static caching was introduced where the data needed stronger freshness guarantees. The system became faster while risking stale information, which changed the question from whether something could be cached to how fresh that data needed to be.",
       },
     ],
     outcomes: [
       "Used across 6 schools.",
-      "One school has 200+ students.",
-      "School pilots revealed real product and engineering problems.",
+      "400+ students.",
     ],
     ending:
-      "Shipping quickly can be the right choice when the goal is learning, and temporary technical debt can be acceptable. At other stages, strengthening the system matters more than adding another feature. Recognizing the current stage is part of the engineering work.",
+      "Engineering judgment includes recognizing the product's current maturity: when shipping quickly creates useful learning, and when strengthening the system matters more than adding another feature.",
     next: "lud",
   },
   lud: {
@@ -247,8 +249,11 @@ export const caseStudies = {
       month: "09",
       year: "2024",
     },
-    dateTo: "present",
-    tags: ["Business Systems", "Data", "Automation", "Integrations"],
+    dateTo: {
+      month:"08",
+      year:"2025"
+    },
+    tags: ["Business Systems", "Data Engineering", "Automation"],
     images: [
       {
         src: "/assets/projects/lud/LUD_Landing.png",
@@ -281,21 +286,24 @@ export const caseStudies = {
     positioning:
       "An operational platform that grew from spreadsheet automation into business tooling.",
     overview:
-      "LUD began when an accountant struggled to extract useful information from multiple Excel files. Afrah proposed software that could perform the calculations and reduce repetitive work. The first version presented the calculated results for each delivery platform.",
+      "LUD began with an accountant trying to extract useful information from multiple Excel files. The first request was calculation-heavy, so I proposed software that could automate the repeated work and present results for each delivery platform.",
     challenge:
-      "Working closely with the accountant revealed a broader problem. Restaurants needed more than calculations; they needed operational information that explained what was happening and supported better decisions.",
+      "Working closely with the accountant revealed the larger opportunity. Restaurants did not only need faster calculations; they needed a clearer view of what was happening operationally, across delivery platforms, branches, menu performance, and financial workflows.",
     decisions: [
-      "Built the system from the ground up while translating evolving business requirements into product workflows.",
+      "Translated evolving and sometimes messy business requirements into usable workflows for reporting, onboarding, accounting, delivery-platform analysis, and menu engineering.",
       "Kept the product principle clear: give businesses better information and tools to act, without promising outcomes the software cannot control.",
-      "Designed around the reality that business rules and calculations change.",
+      "Designed around the reality that business rules, calculations, and operational questions change as the client understands the product more clearly.",
     ],
     stories: [
       {
         title: "Recovery became a product requirement",
-        body: "Early in LUD, the database setup lacked an adequate backup strategy, and the infrastructure failed. The customer base was still small enough to rebuild the database, but the incident made backup and recovery business requirements rather than infrastructure checkboxes.",
+        body: "Early in LUD, the database setup did not have an adequate backup strategy, and an infrastructure failure exposed that weakness. The customer base was still small enough to rebuild the database, but the incident changed how I treated reliability: backup and recovery became business requirements, not infrastructure checkboxes.",
       },
     ],
-    outcomes: ["LUD currently has more than 20 clients."],
+    outcomes: [
+      "LUD currently has more than 20 clients.",
+      "The product grew from Excel automation into workflows for reporting, onboarding, accounting, delivery-platform analysis, and menu engineering.",
+    ],
     ending:
       "The first problem a client describes is not always the problem worth solving.",
     next: "rooting",
@@ -315,7 +323,7 @@ export const caseStudies = {
       month: "08",
       year: "2024",
     },
-    tags: ["E-commerce", "Full Stack", "Payments", "Cloud"],
+    tags: ["Full Stack", "Payments", "Cloud", "Integration"],
     images: [
       {
         src: "/assets/projects/rooting/Rooting_Landing.png",
@@ -337,26 +345,28 @@ export const caseStudies = {
     positioning:
       "A first complete e-commerce product built to understand real-world product ownership.",
     overview:
-      "Rooting was Afrah's first complete e-commerce project. It began as a deliberate attempt to move beyond learning individual programming skills and understand what it takes to create a complete real-world product.",
+      "Rooting was my first complete e-commerce product. It began as a deliberate attempt to move beyond learning individual programming skills and understand how a real product works when the pieces have to fit together.",
     challenge:
-      "The first version followed a full-stack e-commerce tutorial. The second was rebuilt around Rooting's actual business requirements, turning a learning exercise into a production application.",
+      "The first version followed a full-stack e-commerce tutorial. After that, I rebuilt the product around Rooting's actual business requirements, turning the tutorial foundation into a shipped application with real operations behind it.",
     decisions: [
-      "Built the customer storefront, administration tools, frontend, backend, database, payments, delivery integrations, infrastructure, and deployment.",
-      "Evaluated payment and delivery options not only by integration difficulty, but by what made sense for the business.",
+      "Owned the full delivery boundary: customer experience, administration, backend, data, payments, delivery integrations, infrastructure, and deployment.",
+      "Evaluated payment and delivery options by business suitability, not integration difficulty alone.",
       "Applied infrastructure and cloud concepts from a Saudi Digital Academy DevOps program to deploy and operate the application using AWS.",
     ],
     stories: [
       {
         title: "The work expanded one problem at a time",
-        body: "Rooting showed that building a complete product does not require understanding every part of the system before starting. It requires understanding the next problem well enough to solve it, then expanding from there.",
+        body: "Rooting moved from a storefront into the less visible work that makes commerce usable: product administration, payment flow, delivery integration, deployment, and day-to-day operation. Each layer forced a different kind of decision, and the lesson was to understand the next boundary clearly enough to own it before expanding further.",
       },
     ],
     outcomes: [
-      "The customer base remained small because sales and marketing were not the primary focus.",
-      "The value of the project was professional growth and end-to-end ownership.",
+      "Built and shipped a complete e-commerce product with storefront and administration workflows.",
+      "Implemented real payment and delivery integrations.",
+      "Deployed and operated the application on AWS.",
+      "Established genuine end-to-end product ownership across product, engineering, infrastructure, and operations.",
     ],
     ending:
-      "Later projects added the other half of the lesson: as systems and stakes grow, knowing when to slow down and design deliberately matters too.",
+      "Rooting taught me how to take a product from idea to operation. Later projects added the other half of that lesson: as scale and responsibility grow, knowing when to slow down and design deliberately matters too.",
     next: "banan",
   },
 } satisfies Record<ProjectSlug, CaseStudy>;

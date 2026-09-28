@@ -78,7 +78,7 @@ export const archiveProjects: ArchiveProject[] = [
     category: "Data visualization",
     date: "2024-08",
     summary:
-      "A real-time data dashboard with interactive charts, filtering, and customizable views.",
+    "A real-time data dashboard with interactive charts, filtering, and customizable views.",
     learning:
       "This project strengthened my approach to presenting changing data in interfaces that are easy to scan and explore.",
     highlights: [
@@ -105,6 +105,8 @@ export const archiveProjects: ArchiveProject[] = [
       },
     ],
     featured: true,
+    githubLink:undefined,
+    liveUrl:undefined,
   },
   {
     id: "e-commerce",
@@ -147,6 +149,8 @@ export const archiveProjects: ArchiveProject[] = [
         alt: "E-commerce interface",
       },
     ],
+    githubLink:undefined,
+    liveUrl:undefined,
   },
   {
     id: "hima",
@@ -175,6 +179,8 @@ export const archiveProjects: ArchiveProject[] = [
       },
     ],
     featured: true,
+    githubLink:undefined,
+    liveUrl:undefined,
   },
   {
     id: "sentences-recognizer",
@@ -201,6 +207,8 @@ export const archiveProjects: ArchiveProject[] = [
         alt: "Sentences Recognizer experiment",
       },
     ],
+    githubLink:undefined,
+    liveUrl:undefined,
   },
   {
     id: "character-recognizer",
@@ -237,6 +245,8 @@ export const archiveProjects: ArchiveProject[] = [
         alt: "Character Recognizer questionnaire",
       },
     ],
+    githubLink:undefined,
+    liveUrl:undefined,
   },
   {
     id: "alnorain",
@@ -274,6 +284,8 @@ export const archiveProjects: ArchiveProject[] = [
         alt: "Alnorain pilgrim assistance app",
       },
     ],
+    githubLink:undefined,
+    liveUrl:undefined,
   },
   {
     id: "hotel-management-system",
@@ -305,6 +317,8 @@ export const archiveProjects: ArchiveProject[] = [
         alt: "Hotel Management System interface",
       },
     ],
+    githubLink:undefined,
+    liveUrl:undefined,
   },
   {
     id: "athar",
@@ -343,6 +357,8 @@ export const archiveProjects: ArchiveProject[] = [
     ],
     featured: true,
     personal: true,
+    githubLink:undefined,
+    liveUrl:undefined,
   },
   {
     id: "gameso",
@@ -380,6 +396,8 @@ export const archiveProjects: ArchiveProject[] = [
         alt: "Gameso marketplace interface",
       },
     ],
+    githubLink:undefined,
+    liveUrl:undefined,
   },
   {
     id: "badan",
@@ -411,6 +429,8 @@ export const archiveProjects: ArchiveProject[] = [
         alt: "Badan sports discovery website",
       },
     ],
+    githubLink:undefined,
+    liveUrl:undefined,
   },
   {
     id: "minecraft-graphics",
@@ -438,6 +458,8 @@ export const archiveProjects: ArchiveProject[] = [
         alt: "Minecraft-inspired graphics experiment",
       },
     ],
+    githubLink:undefined,
+    liveUrl:undefined,
   },
 ];
 
